@@ -275,13 +275,41 @@ div[data-testid="stChatMessage"] * {{
     border-radius: 16px !important;
 }}
 
+[data-testid="stChatInput"] > div {{
+    background: var(--input-bg) !important;
+    border-radius: 16px !important;
+}}
+
 [data-testid="stChatInput"] textarea {{
     color: var(--text) !important;
-    background: transparent !important;
+    background: var(--input-bg) !important;
+    caret-color: var(--text) !important;
+    -webkit-text-fill-color: var(--text) !important;
 }}
 
 [data-testid="stChatInput"] textarea::placeholder {{
     color: var(--muted) !important;
+    opacity: 1 !important;
+    -webkit-text-fill-color: var(--muted) !important;
+}}
+
+[data-testid="stChatInput"] button {{
+    background: var(--surface-2) !important;
+    color: var(--text) !important;
+    border-radius: 10px !important;
+}}
+
+[data-testid="stChatInput"] button svg {{
+    fill: var(--text) !important;
+    stroke: var(--text) !important;
+}}
+
+[data-testid="stBottomBlockContainer"] [data-baseweb="textarea"] {{
+    background: var(--input-bg) !important;
+}}
+
+[data-testid="stBottomBlockContainer"] [data-baseweb="base-input"] {{
+    background: var(--input-bg) !important;
 }}
 
 
