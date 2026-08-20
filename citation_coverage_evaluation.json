@@ -1,0 +1,2870 @@
+{
+  "settings": {
+    "refusal_threshold": 0.54,
+    "final_k": 5,
+    "max_claims": 6,
+    "generator_model": "gpt-5.6-sol",
+    "support_judge_model": "gpt-5.6-sol",
+    "citation_metadata_source": "python_from_retrieved_chunks"
+  },
+  "summary": {
+    "total_questions": 20,
+    "evaluated_answers": 20,
+    "refused_or_insufficient": 0,
+    "generation_errors": 0,
+    "reranker_fallbacks": 0,
+    "total_claims": 109,
+    "claims_with_citation": 109,
+    "claims_with_valid_citations": 109,
+    "supported_claims": 108,
+    "unsupported_claims": 1,
+    "judge_errors": 0,
+    "citation_presence_coverage": 1.0,
+    "claim_valid_citation_rate": 1.0,
+    "citation_reference_validity": 1.0,
+    "claim_support_rate": 0.9908256880733946,
+    "fully_grounded_answers": 19,
+    "fully_grounded_answer_rate": 0.95,
+    "answer_generation_rate": 1.0,
+    "end_to_end_grounded_rate": 0.95
+  },
+  "questions": [
+    {
+      "question": "What are the main risk factors for Alzheimer's disease?",
+      "status": "evaluated",
+      "best_similarity": 0.656058870295518,
+      "rewritten_query": "What are the main risk factors for Alzheimer's disease?",
+      "multi_queries": [
+        "What are the main risk factors for Alzheimer's disease?",
+        "What factors are associated with an increased risk of developing Alzheimer's disease?",
+        "What are the principal determinants of Alzheimer's disease risk?"
+      ],
+      "retrieved_chunk_ids": [
+        4,
+        16,
+        45,
+        1,
+        9
+      ],
+      "raw_claim_output": "CLAIM_1: Advanced age is the strongest risk factor for Alzheimer’s disease.\nCITES_1: 4\n\nCLAIM_2: Genetic risk factors include the APOE ε4 allele and rare mutations in APP, PSEN1, and PSEN2.\nCITES_2: 4,16\n\nCLAIM_3: Down syndrome is associated with Alzheimer-type pathology by middle age.\nCITES_3: 4,16\n\nCLAIM_4: Hypertension, diabetes, dyslipidemia, and other vascular or metabolic risks are linked to increased Alzheimer’s disease risk.\nCITES_4: 4,45\n\nCLAIM_5: Physical inactivity and current smoking are modifiable lifestyle risk factors.\nCITES_5: 4\n\nCLAIM_6: Additional risk factors include family history of dementia, female sex, chronic inflammation, and moderate or severe traumatic brain injury.\nCITES_6: 4",
+      "claims": [
+        {
+          "number": 1,
+          "claim": "Advanced age is the strongest risk factor for Alzheimer’s disease.",
+          "cited_chunk_ids": [
+            4
+          ],
+          "valid_cited_chunk_ids": [
+            4
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 2,
+          "claim": "Genetic risk factors include the APOE ε4 allele and rare mutations in APP, PSEN1, and PSEN2.",
+          "cited_chunk_ids": [
+            4,
+            16
+          ],
+          "valid_cited_chunk_ids": [
+            4,
+            16
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 3,
+          "claim": "Down syndrome is associated with Alzheimer-type pathology by middle age.",
+          "cited_chunk_ids": [
+            4,
+            16
+          ],
+          "valid_cited_chunk_ids": [
+            4,
+            16
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 4,
+          "claim": "Hypertension, diabetes, dyslipidemia, and other vascular or metabolic risks are linked to increased Alzheimer’s disease risk.",
+          "cited_chunk_ids": [
+            4,
+            45
+          ],
+          "valid_cited_chunk_ids": [
+            4,
+            45
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 5,
+          "claim": "Physical inactivity and current smoking are modifiable lifestyle risk factors.",
+          "cited_chunk_ids": [
+            4
+          ],
+          "valid_cited_chunk_ids": [
+            4
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 6,
+          "claim": "Additional risk factors include family history of dementia, female sex, chronic inflammation, and moderate or severe traumatic brain injury.",
+          "cited_chunk_ids": [
+            4
+          ],
+          "valid_cited_chunk_ids": [
+            4
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        }
+      ],
+      "citations": [
+        {
+          "chunk_id": 4,
+          "section": "3. Epidemiology, incidence, and risk factors",
+          "pages": [
+            2,
+            3
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.656058870295518
+        },
+        {
+          "chunk_id": 16,
+          "section": "7.6. Genetics",
+          "pages": [
+            9,
+            10
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.618875268372517
+        },
+        {
+          "chunk_id": 45,
+          "section": "13. Challenges, heterogeneity, and future directions",
+          "pages": [
+            25
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.483237477585103
+        }
+      ],
+      "fully_grounded": true
+    },
+    {
+      "question": "What are the typical clinical symptoms of Alzheimer's disease?",
+      "status": "evaluated",
+      "best_similarity": 0.658907309513937,
+      "rewritten_query": "What are the typical clinical symptoms of Alzheimer's disease?",
+      "multi_queries": [
+        "What are the typical clinical symptoms of Alzheimer's disease?",
+        "What are the characteristic clinical manifestations of Alzheimer’s disease?",
+        "What signs and symptoms are commonly observed in patients with Alzheimer’s disease?"
+      ],
+      "retrieved_chunk_ids": [
+        5,
+        2,
+        8,
+        6,
+        21
+      ],
+      "raw_claim_output": "CLAIM_1: Alzheimer’s disease typically has an insidious onset, beginning with progressive impairment of episodic memory and difficulty forming and retaining new memories.\nCITES_1: 2,5\n\nCLAIM_2: Early memory symptoms commonly include misplacing objects, repeating questions, and forgetting recent conversations, while remote memories are relatively preserved initially.\nCITES_2: 5\n\nCLAIM_3: As the disease progresses, impaired attention and executive function cause difficulties with planning, organization, and problem-solving.\nCITES_3: 5\n\nCLAIM_4: Language symptoms, especially mild word-finding difficulty, may occur early, while semantic memory and visuospatial abilities generally decline more gradually.\nCITES_4: 5\n\nCLAIM_5: Common neuropsychiatric symptoms include apathy, depression, anxiety, irritability, agitation, and sleep disturbances; delusions or hallucinations may occur in advanced disease.\nCITES_5: 5\n\nCLAIM_6: Progressive cognitive and behavioral impairment ultimately causes loss of independence in instrumental and basic daily activities and may culminate in complete dependency.\nCITES_6: 5",
+      "claims": [
+        {
+          "number": 1,
+          "claim": "Alzheimer’s disease typically has an insidious onset, beginning with progressive impairment of episodic memory and difficulty forming and retaining new memories.",
+          "cited_chunk_ids": [
+            2,
+            5
+          ],
+          "valid_cited_chunk_ids": [
+            2,
+            5
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 2,
+          "claim": "Early memory symptoms commonly include misplacing objects, repeating questions, and forgetting recent conversations, while remote memories are relatively preserved initially.",
+          "cited_chunk_ids": [
+            5
+          ],
+          "valid_cited_chunk_ids": [
+            5
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 3,
+          "claim": "As the disease progresses, impaired attention and executive function cause difficulties with planning, organization, and problem-solving.",
+          "cited_chunk_ids": [
+            5
+          ],
+          "valid_cited_chunk_ids": [
+            5
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 4,
+          "claim": "Language symptoms, especially mild word-finding difficulty, may occur early, while semantic memory and visuospatial abilities generally decline more gradually.",
+          "cited_chunk_ids": [
+            5
+          ],
+          "valid_cited_chunk_ids": [
+            5
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 5,
+          "claim": "Common neuropsychiatric symptoms include apathy, depression, anxiety, irritability, agitation, and sleep disturbances; delusions or hallucinations may occur in advanced disease.",
+          "cited_chunk_ids": [
+            5
+          ],
+          "valid_cited_chunk_ids": [
+            5
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 6,
+          "claim": "Progressive cognitive and behavioral impairment ultimately causes loss of independence in instrumental and basic daily activities and may culminate in complete dependency.",
+          "cited_chunk_ids": [
+            5
+          ],
+          "valid_cited_chunk_ids": [
+            5
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        }
+      ],
+      "citations": [
+        {
+          "chunk_id": 2,
+          "section": "1. Introduction",
+          "pages": [
+            1,
+            2
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.581449016914464
+        },
+        {
+          "chunk_id": 5,
+          "section": "4.1. Typical presentation",
+          "pages": [
+            3,
+            4
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.658907309513937
+        }
+      ],
+      "fully_grounded": true
+    },
+    {
+      "question": "What role does amyloid-beta play in Alzheimer's disease?",
+      "status": "evaluated",
+      "best_similarity": 0.617593637239214,
+      "rewritten_query": "What role does amyloid-beta play in Alzheimer's disease?",
+      "multi_queries": [
+        "What role does amyloid-beta play in Alzheimer's disease?",
+        "What is the role of amyloid-β in the pathogenesis of Alzheimer’s disease?",
+        "How does amyloid-beta contribute to Alzheimer’s disease?"
+      ],
+      "retrieved_chunk_ids": [
+        13,
+        11,
+        10,
+        14,
+        9
+      ],
+      "raw_claim_output": "CLAIM_1: Amyloid-beta (Aβ) is produced from amyloid precursor protein; the aggregation-prone Aβ42 isoform is proposed to initiate plaque formation and subsequent neuronal toxicity in Alzheimer’s disease.\nCITES_1: 13\n\nCLAIM_2: Soluble misfolded Aβ oligomers may be more neurotoxic than fibrillar plaques and can disrupt synaptic plasticity before extensive plaque deposition.\nCITES_2: 11\n\nCLAIM_3: Aβ oligomers are linked to early cognitive impairment through impaired long-term potentiation, spine loss, abnormal glutamatergic signaling, calcium influx, and excitotoxic stress.\nCITES_3: 11\n\nCLAIM_4: Oligomeric Aβ may amplify oxidative stress, impair proteostasis, and facilitate tau-related injury.\nCITES_4: 11\n\nCLAIM_5: Amyloid may act as an upstream trigger, while tau pathology correlates more closely with dementia severity and may chiefly drive clinical decline.\nCITES_5: 13\n\nCLAIM_6: Whether amyloid plaques are directly neurotoxic or are primarily a by-product of upstream processes remains unresolved.\nCITES_6: 10",
+      "claims": [
+        {
+          "number": 1,
+          "claim": "Amyloid-beta (Aβ) is produced from amyloid precursor protein; the aggregation-prone Aβ42 isoform is proposed to initiate plaque formation and subsequent neuronal toxicity in Alzheimer’s disease.",
+          "cited_chunk_ids": [
+            13
+          ],
+          "valid_cited_chunk_ids": [
+            13
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 2,
+          "claim": "Soluble misfolded Aβ oligomers may be more neurotoxic than fibrillar plaques and can disrupt synaptic plasticity before extensive plaque deposition.",
+          "cited_chunk_ids": [
+            11
+          ],
+          "valid_cited_chunk_ids": [
+            11
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 3,
+          "claim": "Aβ oligomers are linked to early cognitive impairment through impaired long-term potentiation, spine loss, abnormal glutamatergic signaling, calcium influx, and excitotoxic stress.",
+          "cited_chunk_ids": [
+            11
+          ],
+          "valid_cited_chunk_ids": [
+            11
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 4,
+          "claim": "Oligomeric Aβ may amplify oxidative stress, impair proteostasis, and facilitate tau-related injury.",
+          "cited_chunk_ids": [
+            11
+          ],
+          "valid_cited_chunk_ids": [
+            11
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 5,
+          "claim": "Amyloid may act as an upstream trigger, while tau pathology correlates more closely with dementia severity and may chiefly drive clinical decline.",
+          "cited_chunk_ids": [
+            13
+          ],
+          "valid_cited_chunk_ids": [
+            13
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 6,
+          "claim": "Whether amyloid plaques are directly neurotoxic or are primarily a by-product of upstream processes remains unresolved.",
+          "cited_chunk_ids": [
+            10
+          ],
+          "valid_cited_chunk_ids": [
+            10
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        }
+      ],
+      "citations": [
+        {
+          "chunk_id": 13,
+          "section": "7.3. Amyloid versus tau hypotheses",
+          "pages": [
+            7,
+            8
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.617593637239214
+        },
+        {
+          "chunk_id": 11,
+          "section": "7.1.1. Soluble Aβ oligomers and synaptotoxicity",
+          "pages": [
+            6
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.579932909901922
+        },
+        {
+          "chunk_id": 10,
+          "section": "7.1. Senile plaques",
+          "pages": [
+            6
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.614011111384862
+        }
+      ],
+      "fully_grounded": true
+    },
+    {
+      "question": "What role does tau protein play in Alzheimer's disease?",
+      "status": "evaluated",
+      "best_similarity": 0.6204977229328,
+      "rewritten_query": "What role does tau protein play in Alzheimer's disease?",
+      "multi_queries": [
+        "What role does tau protein play in Alzheimer's disease?",
+        "How does tau protein contribute to the pathophysiology of Alzheimer's disease?",
+        "What is the function of tau in Alzheimer's disease development and progression?"
+      ],
+      "retrieved_chunk_ids": [
+        12,
+        13,
+        8,
+        14,
+        28
+      ],
+      "raw_claim_output": "CLAIM_1: In healthy neurons, tau stabilizes microtubules and supports axonal transport.\nCITES_1: 12\n\nCLAIM_2: In Alzheimer’s disease, tau becomes abnormally phosphorylated, detaches from microtubules, and aggregates into soluble oligomers and then insoluble neurofibrillary tangles.\nCITES_2: 12\n\nCLAIM_3: Tau-related microtubule destabilization disrupts axonal transport, contributes to dystrophic neurites and synaptic loss, and compromises neuronal function.\nCITES_3: 12,13\n\nCLAIM_4: Tau pathology typically begins in the transentorhinal and entorhinal cortex, spreads to limbic regions such as the hippocampus, and later reaches neocortical association areas.\nCITES_4: 8\n\nCLAIM_5: The distribution and burden of neurofibrillary tangles correlate more closely with dementia severity than amyloid-plaque burden, supporting the view that tau pathology is a major driver of clinical decline.\nCITES_5: 13\n\nCLAIM_6: Neuroinflammation can enhance tau phosphorylation and may facilitate the trans-synaptic spread of pathological tau.\nCITES_6: 14",
+      "claims": [
+        {
+          "number": 1,
+          "claim": "In healthy neurons, tau stabilizes microtubules and supports axonal transport.",
+          "cited_chunk_ids": [
+            12
+          ],
+          "valid_cited_chunk_ids": [
+            12
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 2,
+          "claim": "In Alzheimer’s disease, tau becomes abnormally phosphorylated, detaches from microtubules, and aggregates into soluble oligomers and then insoluble neurofibrillary tangles.",
+          "cited_chunk_ids": [
+            12
+          ],
+          "valid_cited_chunk_ids": [
+            12
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 3,
+          "claim": "Tau-related microtubule destabilization disrupts axonal transport, contributes to dystrophic neurites and synaptic loss, and compromises neuronal function.",
+          "cited_chunk_ids": [
+            12,
+            13
+          ],
+          "valid_cited_chunk_ids": [
+            12,
+            13
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 4,
+          "claim": "Tau pathology typically begins in the transentorhinal and entorhinal cortex, spreads to limbic regions such as the hippocampus, and later reaches neocortical association areas.",
+          "cited_chunk_ids": [
+            8
+          ],
+          "valid_cited_chunk_ids": [
+            8
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 5,
+          "claim": "The distribution and burden of neurofibrillary tangles correlate more closely with dementia severity than amyloid-plaque burden, supporting the view that tau pathology is a major driver of clinical decline.",
+          "cited_chunk_ids": [
+            13
+          ],
+          "valid_cited_chunk_ids": [
+            13
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 6,
+          "claim": "Neuroinflammation can enhance tau phosphorylation and may facilitate the trans-synaptic spread of pathological tau.",
+          "cited_chunk_ids": [
+            14
+          ],
+          "valid_cited_chunk_ids": [
+            14
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        }
+      ],
+      "citations": [
+        {
+          "chunk_id": 12,
+          "section": "7.2. Neurofibrillary tangles",
+          "pages": [
+            6,
+            7
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.562024003447783
+        },
+        {
+          "chunk_id": 13,
+          "section": "7.3. Amyloid versus tau hypotheses",
+          "pages": [
+            7,
+            8
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.6204977229328
+        },
+        {
+          "chunk_id": 8,
+          "section": "6. Pathological stages",
+          "pages": [
+            5
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.508954694220184
+        },
+        {
+          "chunk_id": 14,
+          "section": "7.4. Neuroinflammation and vascular contributions as modulators of amyloid and tau pathology",
+          "pages": [
+            8,
+            9
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.535400932253508
+        }
+      ],
+      "fully_grounded": true
+    },
+    {
+      "question": "How does neuroinflammation contribute to Alzheimer's disease?",
+      "status": "evaluated",
+      "best_similarity": 0.669567813169814,
+      "rewritten_query": "How does neuroinflammation contribute to Alzheimer's disease?",
+      "multi_queries": [
+        "How does neuroinflammation contribute to Alzheimer's disease?",
+        "What role does neuroinflammation play in the pathogenesis of Alzheimer's disease?",
+        "Through what mechanisms does neuroinflammation contribute to Alzheimer's disease progression?"
+      ],
+      "retrieved_chunk_ids": [
+        14,
+        4,
+        40,
+        9,
+        38
+      ],
+      "raw_claim_output": "CLAIM_1: Neuroinflammation is a central component of Alzheimer’s disease pathogenesis and can actively amplify amyloid and tau pathology.\nCITES_1: 14\n\nCLAIM_2: Microglia initially protect the brain by clearing amyloid-β through phagocytosis.\nCITES_2: 14\n\nCLAIM_3: Chronic exposure to aggregated amyloid-β sustains microglial activation and promotes the release of proinflammatory cytokines, which impairs amyloid-β clearance and encourages further aggregation in a feed-forward loop.\nCITES_3: 14\n\nCLAIM_4: Proinflammatory cytokines activate kinases such as GSK-3β and CDK5, increasing tau phosphorylation.\nCITES_4: 14\n\nCLAIM_5: Activated microglia may promote trans-synaptic spread of pathological tau through extracellular vesicles and inflammatory signaling cascades.\nCITES_5: 14\n\nCLAIM_6: Inflammatory pathways may continue to sustain neurodegeneration partly independently of amyloid pathology.\nCITES_6: 14,40",
+      "claims": [
+        {
+          "number": 1,
+          "claim": "Neuroinflammation is a central component of Alzheimer’s disease pathogenesis and can actively amplify amyloid and tau pathology.",
+          "cited_chunk_ids": [
+            14
+          ],
+          "valid_cited_chunk_ids": [
+            14
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 2,
+          "claim": "Microglia initially protect the brain by clearing amyloid-β through phagocytosis.",
+          "cited_chunk_ids": [
+            14
+          ],
+          "valid_cited_chunk_ids": [
+            14
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 3,
+          "claim": "Chronic exposure to aggregated amyloid-β sustains microglial activation and promotes the release of proinflammatory cytokines, which impairs amyloid-β clearance and encourages further aggregation in a feed-forward loop.",
+          "cited_chunk_ids": [
+            14
+          ],
+          "valid_cited_chunk_ids": [
+            14
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 4,
+          "claim": "Proinflammatory cytokines activate kinases such as GSK-3β and CDK5, increasing tau phosphorylation.",
+          "cited_chunk_ids": [
+            14
+          ],
+          "valid_cited_chunk_ids": [
+            14
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 5,
+          "claim": "Activated microglia may promote trans-synaptic spread of pathological tau through extracellular vesicles and inflammatory signaling cascades.",
+          "cited_chunk_ids": [
+            14
+          ],
+          "valid_cited_chunk_ids": [
+            14
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 6,
+          "claim": "Inflammatory pathways may continue to sustain neurodegeneration partly independently of amyloid pathology.",
+          "cited_chunk_ids": [
+            14,
+            40
+          ],
+          "valid_cited_chunk_ids": [
+            14,
+            40
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        }
+      ],
+      "citations": [
+        {
+          "chunk_id": 14,
+          "section": "7.4. Neuroinflammation and vascular contributions as modulators of amyloid and tau pathology",
+          "pages": [
+            8,
+            9
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.669567813169814
+        },
+        {
+          "chunk_id": 40,
+          "section": "11.8. Novel treatment approaches",
+          "pages": [
+            22,
+            23
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.493248065001388
+        }
+      ],
+      "fully_grounded": true
+    },
+    {
+      "question": "What genetic factors are associated with Alzheimer's disease?",
+      "status": "evaluated",
+      "best_similarity": 0.646050004288335,
+      "rewritten_query": "What genetic factors are associated with Alzheimer's disease?",
+      "multi_queries": [
+        "What genetic factors are associated with Alzheimer's disease?",
+        "Which genes and genetic variants are associated with Alzheimer’s disease?",
+        "What genetic risk factors are linked to Alzheimer’s disease?"
+      ],
+      "retrieved_chunk_ids": [
+        16,
+        4,
+        10,
+        13,
+        45
+      ],
+      "raw_claim_output": "CLAIM_1: Rare autosomal dominant mutations in APP, PSEN1, and PSEN2 cause early-onset familial Alzheimer’s disease and account for only a small fraction of cases.\nCITES_1: 16\n\nCLAIM_2: APP, PSEN1, and PSEN2 mutations favor increased production or reduced clearance of Aβ42 relative to Aβ40.\nCITES_2: 16\n\nCLAIM_3: The APOE ε4 allele is a major susceptibility factor for sporadic late-onset Alzheimer’s disease; one copy increases risk approximately threefold, while two copies increase risk approximately eightfold.\nCITES_3: 4\n\nCLAIM_4: APOE ε4 also lowers the age of Alzheimer’s disease onset, whereas APOE ε2 may have a protective effect.\nCITES_4: 16\n\nCLAIM_5: Trisomy 21 causes overexpression of the chromosome 21 APP gene and is associated with Alzheimer-type pathology and cognitive deterioration by middle age.\nCITES_5: 4\n\nCLAIM_6: A family history of dementia independently increases Alzheimer’s disease risk through both genetic and shared environmental influences.\nCITES_6: 4",
+      "claims": [
+        {
+          "number": 1,
+          "claim": "Rare autosomal dominant mutations in APP, PSEN1, and PSEN2 cause early-onset familial Alzheimer’s disease and account for only a small fraction of cases.",
+          "cited_chunk_ids": [
+            16
+          ],
+          "valid_cited_chunk_ids": [
+            16
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 2,
+          "claim": "APP, PSEN1, and PSEN2 mutations favor increased production or reduced clearance of Aβ42 relative to Aβ40.",
+          "cited_chunk_ids": [
+            16
+          ],
+          "valid_cited_chunk_ids": [
+            16
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 3,
+          "claim": "The APOE ε4 allele is a major susceptibility factor for sporadic late-onset Alzheimer’s disease; one copy increases risk approximately threefold, while two copies increase risk approximately eightfold.",
+          "cited_chunk_ids": [
+            4
+          ],
+          "valid_cited_chunk_ids": [
+            4
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 4,
+          "claim": "APOE ε4 also lowers the age of Alzheimer’s disease onset, whereas APOE ε2 may have a protective effect.",
+          "cited_chunk_ids": [
+            16
+          ],
+          "valid_cited_chunk_ids": [
+            16
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 5,
+          "claim": "Trisomy 21 causes overexpression of the chromosome 21 APP gene and is associated with Alzheimer-type pathology and cognitive deterioration by middle age.",
+          "cited_chunk_ids": [
+            4
+          ],
+          "valid_cited_chunk_ids": [
+            4
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 6,
+          "claim": "A family history of dementia independently increases Alzheimer’s disease risk through both genetic and shared environmental influences.",
+          "cited_chunk_ids": [
+            4
+          ],
+          "valid_cited_chunk_ids": [
+            4
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        }
+      ],
+      "citations": [
+        {
+          "chunk_id": 16,
+          "section": "7.6. Genetics",
+          "pages": [
+            9,
+            10
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.646050004288335
+        },
+        {
+          "chunk_id": 4,
+          "section": "3. Epidemiology, incidence, and risk factors",
+          "pages": [
+            2,
+            3
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.595271049717596
+        }
+      ],
+      "fully_grounded": true
+    },
+    {
+      "question": "How does the APOE epsilon 4 allele affect Alzheimer's disease risk?",
+      "status": "evaluated",
+      "best_similarity": 0.62516530010692,
+      "rewritten_query": "How does the APOE ε4 allele affect the risk of Alzheimer's disease?",
+      "multi_queries": [
+        "How does the APOE ε4 allele affect the risk of Alzheimer's disease?",
+        "What is the association between the apolipoprotein E ε4 allele and Alzheimer’s disease risk?",
+        "How does carrying the APOE4 genetic variant influence susceptibility to Alzheimer’s disease?"
+      ],
+      "retrieved_chunk_ids": [
+        4,
+        16,
+        13,
+        10,
+        9
+      ],
+      "raw_claim_output": "CLAIM_1: The APOE ε4 allele is a key genetic susceptibility factor for sporadic late-onset Alzheimer’s disease.\nCITES_1: 4,16\n\nCLAIM_2: One APOE ε4 allele increases Alzheimer’s disease risk approximately threefold, while two copies increase risk approximately eightfold.\nCITES_2: 4\n\nCLAIM_3: APOE ε4 carriage is also associated with an earlier age of Alzheimer’s disease onset.\nCITES_3: 16\n\nCLAIM_4: ApoE may affect risk by influencing amyloid-β clearance and deposition in the brain.\nCITES_4: 4,16",
+      "claims": [
+        {
+          "number": 1,
+          "claim": "The APOE ε4 allele is a key genetic susceptibility factor for sporadic late-onset Alzheimer’s disease.",
+          "cited_chunk_ids": [
+            4,
+            16
+          ],
+          "valid_cited_chunk_ids": [
+            4,
+            16
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 2,
+          "claim": "One APOE ε4 allele increases Alzheimer’s disease risk approximately threefold, while two copies increase risk approximately eightfold.",
+          "cited_chunk_ids": [
+            4
+          ],
+          "valid_cited_chunk_ids": [
+            4
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 3,
+          "claim": "APOE ε4 carriage is also associated with an earlier age of Alzheimer’s disease onset.",
+          "cited_chunk_ids": [
+            16
+          ],
+          "valid_cited_chunk_ids": [
+            16
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 4,
+          "claim": "ApoE may affect risk by influencing amyloid-β clearance and deposition in the brain.",
+          "cited_chunk_ids": [
+            4,
+            16
+          ],
+          "valid_cited_chunk_ids": [
+            4,
+            16
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        }
+      ],
+      "citations": [
+        {
+          "chunk_id": 4,
+          "section": "3. Epidemiology, incidence, and risk factors",
+          "pages": [
+            2,
+            3
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.560316441545575
+        },
+        {
+          "chunk_id": 16,
+          "section": "7.6. Genetics",
+          "pages": [
+            9,
+            10
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.62516530010692
+        }
+      ],
+      "fully_grounded": true
+    },
+    {
+      "question": "How is Alzheimer's disease diagnosed?",
+      "status": "evaluated",
+      "best_similarity": 0.701272676079774,
+      "rewritten_query": "How is Alzheimer's disease diagnosed?",
+      "multi_queries": [
+        "How is Alzheimer's disease diagnosed?",
+        "What methods and criteria are used to diagnose Alzheimer's disease?",
+        "What is the clinical diagnostic process for Alzheimer's disease?"
+      ],
+      "retrieved_chunk_ids": [
+        21,
+        17,
+        30,
+        19,
+        3
+      ],
+      "raw_claim_output": "CLAIM_1: Clinical evaluation includes history from the patient and informants, neurological and mental-status examinations, and formal neuropsychological testing to document progressive cognitive decline.\nCITES_1: 21\n\nCLAIM_2: The evaluation also seeks alternative or coexisting conditions that may contribute to cognitive impairment.\nCITES_2: 30\n\nCLAIM_3: Under the 2024 revised criteria, an abnormal validated Core 1 biomarker—such as amyloid PET, an approved cerebrospinal-fluid assay, or accurate plasma phosphorylated tau, particularly p-tau217—is sufficient to establish a biological diagnosis of Alzheimer’s disease.\nCITES_3: 17\n\nCLAIM_4: Core 2 biomarkers, including tau PET and additional biofluid measures, help stage the disease, provide prognostic information, and increase confidence that Alzheimer pathology contributes to symptoms.\nCITES_4: 17\n\nCLAIM_5: Historically, definitive confirmation required histological evidence of plaques and tangles at autopsy or, rarely, by brain biopsy.\nCITES_5: 17",
+      "claims": [
+        {
+          "number": 1,
+          "claim": "Clinical evaluation includes history from the patient and informants, neurological and mental-status examinations, and formal neuropsychological testing to document progressive cognitive decline.",
+          "cited_chunk_ids": [
+            21
+          ],
+          "valid_cited_chunk_ids": [
+            21
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 2,
+          "claim": "The evaluation also seeks alternative or coexisting conditions that may contribute to cognitive impairment.",
+          "cited_chunk_ids": [
+            30
+          ],
+          "valid_cited_chunk_ids": [
+            30
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 3,
+          "claim": "Under the 2024 revised criteria, an abnormal validated Core 1 biomarker—such as amyloid PET, an approved cerebrospinal-fluid assay, or accurate plasma phosphorylated tau, particularly p-tau217—is sufficient to establish a biological diagnosis of Alzheimer’s disease.",
+          "cited_chunk_ids": [
+            17
+          ],
+          "valid_cited_chunk_ids": [
+            17
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 4,
+          "claim": "Core 2 biomarkers, including tau PET and additional biofluid measures, help stage the disease, provide prognostic information, and increase confidence that Alzheimer pathology contributes to symptoms.",
+          "cited_chunk_ids": [
+            17
+          ],
+          "valid_cited_chunk_ids": [
+            17
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 5,
+          "claim": "Historically, definitive confirmation required histological evidence of plaques and tangles at autopsy or, rarely, by brain biopsy.",
+          "cited_chunk_ids": [
+            17
+          ],
+          "valid_cited_chunk_ids": [
+            17
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        }
+      ],
+      "citations": [
+        {
+          "chunk_id": 21,
+          "section": "8.4. Clinical diagnosis",
+          "pages": [
+            13
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.701272676079774
+        },
+        {
+          "chunk_id": 30,
+          "section": "10. AD workup and laboratory evaluation",
+          "pages": [
+            18
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.599101913137789
+        },
+        {
+          "chunk_id": 17,
+          "section": "8. Advances in diagnosis and biomarkers",
+          "pages": [
+            10,
+            11
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.570182636268459
+        }
+      ],
+      "fully_grounded": true
+    },
+    {
+      "question": "What biomarkers are used for Alzheimer's disease diagnosis?",
+      "status": "evaluated",
+      "best_similarity": 0.684578028938799,
+      "rewritten_query": "What biomarkers are used to diagnose Alzheimer's disease?",
+      "multi_queries": [
+        "What biomarkers are used to diagnose Alzheimer's disease?",
+        "Which biological markers are used in the diagnosis of Alzheimer's disease?",
+        "What diagnostic biomarkers are used to identify Alzheimer's disease?"
+      ],
+      "retrieved_chunk_ids": [
+        17,
+        19,
+        27,
+        18,
+        20
+      ],
+      "raw_claim_output": "CLAIM_1: Core diagnostic biomarkers include amyloid PET, approved cerebrospinal fluid assays, and accurate plasma phosphorylated tau, particularly p-tau217.\nCITES_1: 17\n\nCLAIM_2: Cerebrospinal fluid biomarkers include decreased Aβ42 and increased total tau and phosphorylated tau.\nCITES_2: 17,19\n\nCLAIM_3: Blood-based biomarkers include plasma p-tau217, p-tau181, and the Aβ42/40 ratio.\nCITES_3: 17\n\nCLAIM_4: Tau PET is used to detect neurofibrillary tau pathology and provides staging and prognostic information.\nCITES_4: 17,19\n\nCLAIM_5: Structural MRI measures, including hippocampal and regional medial temporal or temporoparietal atrophy, are imaging biomarkers of neurodegeneration.\nCITES_5: 18\n\nCLAIM_6: Biomarker findings should be interpreted alongside clinical and cognitive evaluation because biomarker positivity does not necessarily indicate symptomatic dementia.\nCITES_6: 17,20",
+      "claims": [
+        {
+          "number": 1,
+          "claim": "Core diagnostic biomarkers include amyloid PET, approved cerebrospinal fluid assays, and accurate plasma phosphorylated tau, particularly p-tau217.",
+          "cited_chunk_ids": [
+            17
+          ],
+          "valid_cited_chunk_ids": [
+            17
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 2,
+          "claim": "Cerebrospinal fluid biomarkers include decreased Aβ42 and increased total tau and phosphorylated tau.",
+          "cited_chunk_ids": [
+            17,
+            19
+          ],
+          "valid_cited_chunk_ids": [
+            17,
+            19
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 3,
+          "claim": "Blood-based biomarkers include plasma p-tau217, p-tau181, and the Aβ42/40 ratio.",
+          "cited_chunk_ids": [
+            17
+          ],
+          "valid_cited_chunk_ids": [
+            17
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 4,
+          "claim": "Tau PET is used to detect neurofibrillary tau pathology and provides staging and prognostic information.",
+          "cited_chunk_ids": [
+            17,
+            19
+          ],
+          "valid_cited_chunk_ids": [
+            17,
+            19
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 5,
+          "claim": "Structural MRI measures, including hippocampal and regional medial temporal or temporoparietal atrophy, are imaging biomarkers of neurodegeneration.",
+          "cited_chunk_ids": [
+            18
+          ],
+          "valid_cited_chunk_ids": [
+            18
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 6,
+          "claim": "Biomarker findings should be interpreted alongside clinical and cognitive evaluation because biomarker positivity does not necessarily indicate symptomatic dementia.",
+          "cited_chunk_ids": [
+            17,
+            20
+          ],
+          "valid_cited_chunk_ids": [
+            17,
+            20
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        }
+      ],
+      "citations": [
+        {
+          "chunk_id": 17,
+          "section": "8. Advances in diagnosis and biomarkers",
+          "pages": [
+            10,
+            11
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.641398014258255
+        },
+        {
+          "chunk_id": 19,
+          "section": "8.2. Biomarker-based diagnosis",
+          "pages": [
+            11,
+            12
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.684578028938799
+        },
+        {
+          "chunk_id": 18,
+          "section": "8.1. Temporal evolution of biomarkers across the Alzheimer's continuum",
+          "pages": [
+            11
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.559466142124674
+        },
+        {
+          "chunk_id": 20,
+          "section": "8.3. Limitations and practical challenges of biomarker implementation",
+          "pages": [
+            12
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.520362174137057
+        }
+      ],
+      "fully_grounded": true
+    },
+    {
+      "question": "What is the role of amyloid PET imaging in Alzheimer's disease?",
+      "status": "evaluated",
+      "best_similarity": 0.691239519378726,
+      "rewritten_query": "What is the role of amyloid PET imaging in Alzheimer's disease?",
+      "multi_queries": [
+        "What is the role of amyloid PET imaging in Alzheimer's disease?",
+        "What is the utility of amyloid positron emission tomography in Alzheimer’s disease?",
+        "How is amyloid PET imaging used in Alzheimer’s disease?"
+      ],
+      "retrieved_chunk_ids": [
+        27,
+        17,
+        19,
+        18,
+        3
+      ],
+      "raw_claim_output": "CLAIM_1: Amyloid PET visualizes cortical fibrillar amyloid-β deposition in vivo using radiotracers such as PiB, florbetapir, flutemetamol, or florbetaben.\nCITES_1: 27\n\nCLAIM_2: Under the 2024 Alzheimer’s Association criteria, a positive amyloid PET is a Core 1 biomarker sufficient to establish the biological presence of Alzheimer’s disease, including in asymptomatic individuals.\nCITES_2: 27,17\n\nCLAIM_3: Amyloid PET can detect Alzheimer’s pathology early in the preclinical phase, before overt symptoms emerge.\nCITES_3: 18\n\nCLAIM_4: Amyloid PET identifies Alzheimer’s neuropathologic change but does not determine clinical stage, and amyloid burden does not directly correlate with cognitive severity.\nCITES_4: 27\n\nCLAIM_5: A negative amyloid PET makes Alzheimer’s disease biology highly unlikely.\nCITES_5: 27\n\nCLAIM_6: A positive scan does not by itself establish symptomatic disease because approximately 20%–25% of cognitively healthy older adults have positive amyloid scans consistent with preclinical Alzheimer’s disease.\nCITES_6: 27",
+      "claims": [
+        {
+          "number": 1,
+          "claim": "Amyloid PET visualizes cortical fibrillar amyloid-β deposition in vivo using radiotracers such as PiB, florbetapir, flutemetamol, or florbetaben.",
+          "cited_chunk_ids": [
+            27
+          ],
+          "valid_cited_chunk_ids": [
+            27
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 2,
+          "claim": "Under the 2024 Alzheimer’s Association criteria, a positive amyloid PET is a Core 1 biomarker sufficient to establish the biological presence of Alzheimer’s disease, including in asymptomatic individuals.",
+          "cited_chunk_ids": [
+            27,
+            17
+          ],
+          "valid_cited_chunk_ids": [
+            27,
+            17
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 3,
+          "claim": "Amyloid PET can detect Alzheimer’s pathology early in the preclinical phase, before overt symptoms emerge.",
+          "cited_chunk_ids": [
+            18
+          ],
+          "valid_cited_chunk_ids": [
+            18
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 4,
+          "claim": "Amyloid PET identifies Alzheimer’s neuropathologic change but does not determine clinical stage, and amyloid burden does not directly correlate with cognitive severity.",
+          "cited_chunk_ids": [
+            27
+          ],
+          "valid_cited_chunk_ids": [
+            27
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 5,
+          "claim": "A negative amyloid PET makes Alzheimer’s disease biology highly unlikely.",
+          "cited_chunk_ids": [
+            27
+          ],
+          "valid_cited_chunk_ids": [
+            27
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 6,
+          "claim": "A positive scan does not by itself establish symptomatic disease because approximately 20%–25% of cognitively healthy older adults have positive amyloid scans consistent with preclinical Alzheimer’s disease.",
+          "cited_chunk_ids": [
+            27
+          ],
+          "valid_cited_chunk_ids": [
+            27
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        }
+      ],
+      "citations": [
+        {
+          "chunk_id": 27,
+          "section": "9.4.1. Amyloid PET (Core 1 biomarker)",
+          "pages": [
+            17
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.691239519378726
+        },
+        {
+          "chunk_id": 17,
+          "section": "8. Advances in diagnosis and biomarkers",
+          "pages": [
+            10,
+            11
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.496359277116062
+        },
+        {
+          "chunk_id": 18,
+          "section": "8.1. Temporal evolution of biomarkers across the Alzheimer's continuum",
+          "pages": [
+            11
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.472383664252618
+        }
+      ],
+      "fully_grounded": true
+    },
+    {
+      "question": "What is the role of tau PET imaging in Alzheimer's disease?",
+      "status": "evaluated",
+      "best_similarity": 0.704546448731644,
+      "rewritten_query": "What is the role of tau PET imaging in Alzheimer's disease?",
+      "multi_queries": [
+        "What is the role of tau PET imaging in Alzheimer's disease?",
+        "What is the clinical utility of tau positron emission tomography in Alzheimer's disease?",
+        "How is tau PET used in the evaluation of Alzheimer's disease?"
+      ],
+      "retrieved_chunk_ids": [
+        28,
+        17,
+        19,
+        18,
+        29
+      ],
+      "raw_claim_output": "CLAIM_1: Tau PET enables in vivo visualization of neurofibrillary tangles and their anatomical distribution in Alzheimer’s disease.\nCITES_1: 17,28\n\nCLAIM_2: Tau PET uptake occurs in regions expected to contain Alzheimer-related tau pathology, including the hippocampus, entorhinal cortex, and temporoparietal association cortices.\nCITES_2: 28\n\nCLAIM_3: Tau PET reflects anatomical progression consistent with Braak staging and supports biological staging across preclinical, mild cognitive impairment, and dementia phases.\nCITES_3: 17,28\n\nCLAIM_4: Tau PET signal correlates more strongly with cognitive impairment than amyloid PET.\nCITES_4: 28\n\nCLAIM_5: Under the 2024 revised criteria, tau PET is a Core 2 biomarker that provides staging and prognostic information and increases confidence that Alzheimer pathology contributes to clinical symptoms.\nCITES_5: 17,28\n\nCLAIM_6: Tau PET is not entirely specific to Alzheimer’s disease because it may also be positive in tauopathies such as chronic traumatic encephalopathy and progressive supranuclear palsy.\nCITES_6: 28",
+      "claims": [
+        {
+          "number": 1,
+          "claim": "Tau PET enables in vivo visualization of neurofibrillary tangles and their anatomical distribution in Alzheimer’s disease.",
+          "cited_chunk_ids": [
+            17,
+            28
+          ],
+          "valid_cited_chunk_ids": [
+            17,
+            28
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 2,
+          "claim": "Tau PET uptake occurs in regions expected to contain Alzheimer-related tau pathology, including the hippocampus, entorhinal cortex, and temporoparietal association cortices.",
+          "cited_chunk_ids": [
+            28
+          ],
+          "valid_cited_chunk_ids": [
+            28
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 3,
+          "claim": "Tau PET reflects anatomical progression consistent with Braak staging and supports biological staging across preclinical, mild cognitive impairment, and dementia phases.",
+          "cited_chunk_ids": [
+            17,
+            28
+          ],
+          "valid_cited_chunk_ids": [
+            17,
+            28
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 4,
+          "claim": "Tau PET signal correlates more strongly with cognitive impairment than amyloid PET.",
+          "cited_chunk_ids": [
+            28
+          ],
+          "valid_cited_chunk_ids": [
+            28
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 5,
+          "claim": "Under the 2024 revised criteria, tau PET is a Core 2 biomarker that provides staging and prognostic information and increases confidence that Alzheimer pathology contributes to clinical symptoms.",
+          "cited_chunk_ids": [
+            17,
+            28
+          ],
+          "valid_cited_chunk_ids": [
+            17,
+            28
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 6,
+          "claim": "Tau PET is not entirely specific to Alzheimer’s disease because it may also be positive in tauopathies such as chronic traumatic encephalopathy and progressive supranuclear palsy.",
+          "cited_chunk_ids": [
+            28
+          ],
+          "valid_cited_chunk_ids": [
+            28
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        }
+      ],
+      "citations": [
+        {
+          "chunk_id": 17,
+          "section": "8. Advances in diagnosis and biomarkers",
+          "pages": [
+            10,
+            11
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.530784879401809
+        },
+        {
+          "chunk_id": 28,
+          "section": "9.4.2. Tau PET (Core 2 biomarker and staging tool)",
+          "pages": [
+            17
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.704546448731644
+        }
+      ],
+      "fully_grounded": true
+    },
+    {
+      "question": "What MRI findings are associated with Alzheimer's disease?",
+      "status": "evaluated",
+      "best_similarity": 0.659316262746632,
+      "rewritten_query": "What MRI findings are associated with Alzheimer's disease?",
+      "multi_queries": [
+        "What MRI findings are associated with Alzheimer's disease?",
+        "What magnetic resonance imaging features are characteristic of Alzheimer's disease?",
+        "Which structural MRI abnormalities are associated with Alzheimer's disease?"
+      ],
+      "retrieved_chunk_ids": [
+        22,
+        23,
+        24,
+        18,
+        25
+      ],
+      "raw_claim_output": "CLAIM_1: Key structural MRI findings in Alzheimer’s disease include medial temporal lobe atrophy, especially involving the hippocampus, entorhinal cortex, and perirhinal cortex.\nCITES_1: 22\n\nCLAIM_2: Temporoparietal cortical atrophy is also a characteristic MRI finding.\nCITES_2: 22\n\nCLAIM_3: Other associated structural findings include cortical thinning, enlargement of the cerebral ventricles, and widening of the parahippocampal fissures.\nCITES_3: 22\n\nCLAIM_4: Posterior cortical atrophy and early-onset Alzheimer’s disease may show prominent parietal and precuneus atrophy, enlarged posterior cingulate and parieto-occipital sulci, and thinning of the precuneus and parietal cortex.\nCITES_4: 22\n\nCLAIM_5: Alzheimer’s disease is associated with accelerated whole-brain and hippocampal volume loss on longitudinal MRI.\nCITES_5: 23\n\nCLAIM_6: Diffusion MRI may detect early white-matter microstructural disruption, including reduced integrity or density of perforant-path fibers connecting the entorhinal cortex and hippocampus.\nCITES_6: 24",
+      "claims": [
+        {
+          "number": 1,
+          "claim": "Key structural MRI findings in Alzheimer’s disease include medial temporal lobe atrophy, especially involving the hippocampus, entorhinal cortex, and perirhinal cortex.",
+          "cited_chunk_ids": [
+            22
+          ],
+          "valid_cited_chunk_ids": [
+            22
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 2,
+          "claim": "Temporoparietal cortical atrophy is also a characteristic MRI finding.",
+          "cited_chunk_ids": [
+            22
+          ],
+          "valid_cited_chunk_ids": [
+            22
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 3,
+          "claim": "Other associated structural findings include cortical thinning, enlargement of the cerebral ventricles, and widening of the parahippocampal fissures.",
+          "cited_chunk_ids": [
+            22
+          ],
+          "valid_cited_chunk_ids": [
+            22
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 4,
+          "claim": "Posterior cortical atrophy and early-onset Alzheimer’s disease may show prominent parietal and precuneus atrophy, enlarged posterior cingulate and parieto-occipital sulci, and thinning of the precuneus and parietal cortex.",
+          "cited_chunk_ids": [
+            22
+          ],
+          "valid_cited_chunk_ids": [
+            22
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 5,
+          "claim": "Alzheimer’s disease is associated with accelerated whole-brain and hippocampal volume loss on longitudinal MRI.",
+          "cited_chunk_ids": [
+            23
+          ],
+          "valid_cited_chunk_ids": [
+            23
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 6,
+          "claim": "Diffusion MRI may detect early white-matter microstructural disruption, including reduced integrity or density of perforant-path fibers connecting the entorhinal cortex and hippocampus.",
+          "cited_chunk_ids": [
+            24
+          ],
+          "valid_cited_chunk_ids": [
+            24
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        }
+      ],
+      "citations": [
+        {
+          "chunk_id": 22,
+          "section": "9.1. Structural imaging (CT and MRI)",
+          "pages": [
+            14,
+            15
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.638128870501976
+        },
+        {
+          "chunk_id": 23,
+          "section": "9.1. Structural imaging (CT and MRI)",
+          "pages": [
+            15
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.659316262746632
+        },
+        {
+          "chunk_id": 24,
+          "section": "9.2. Longitudinal volumetric and microstructural MRI metrics in disease progression",
+          "pages": [
+            15,
+            16
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.57106800750968
+        }
+      ],
+      "fully_grounded": true
+    },
+    {
+      "question": "What blood-based biomarkers are used for Alzheimer's disease?",
+      "status": "evaluated",
+      "best_similarity": 0.682944632149073,
+      "rewritten_query": "What blood-based biomarkers are used for Alzheimer's disease?",
+      "multi_queries": [
+        "What blood-based biomarkers are used for Alzheimer's disease?",
+        "Which circulating blood biomarkers are used in Alzheimer’s disease?",
+        "What plasma- or serum-based biomarkers are used for Alzheimer’s disease?"
+      ],
+      "retrieved_chunk_ids": [
+        17,
+        19,
+        20,
+        21,
+        46
+      ],
+      "raw_claim_output": "CLAIM_1: Blood-based biomarkers used for Alzheimer’s disease include plasma phosphorylated tau 217 (p-tau217), phosphorylated tau 181 (p-tau181), and the amyloid-beta 42/40 (Aβ42/40) ratio.\nCITES_1: 17\n\nCLAIM_2: Plasma p-tau217, p-tau181, and Aβ42/40 ratios correlate with PET and cerebrospinal-fluid findings and predict progression from preclinical to symptomatic disease.\nCITES_2: 17\n\nCLAIM_3: Accurate plasma p-tau, particularly p-tau217, can qualify as a “Core 1” biomarker sufficient to establish a biological Alzheimer’s disease diagnosis under the 2024 revised criteria.\nCITES_3: 17\n\nCLAIM_4: Plasma biomarker results require clinical context because elevated phosphorylated tau can occur in other neurodegenerative or systemic conditions, and assay methods and reference ranges are not yet fully standardized.\nCITES_4: 20",
+      "claims": [
+        {
+          "number": 1,
+          "claim": "Blood-based biomarkers used for Alzheimer’s disease include plasma phosphorylated tau 217 (p-tau217), phosphorylated tau 181 (p-tau181), and the amyloid-beta 42/40 (Aβ42/40) ratio.",
+          "cited_chunk_ids": [
+            17
+          ],
+          "valid_cited_chunk_ids": [
+            17
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 2,
+          "claim": "Plasma p-tau217, p-tau181, and Aβ42/40 ratios correlate with PET and cerebrospinal-fluid findings and predict progression from preclinical to symptomatic disease.",
+          "cited_chunk_ids": [
+            17
+          ],
+          "valid_cited_chunk_ids": [
+            17
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 3,
+          "claim": "Accurate plasma p-tau, particularly p-tau217, can qualify as a “Core 1” biomarker sufficient to establish a biological Alzheimer’s disease diagnosis under the 2024 revised criteria.",
+          "cited_chunk_ids": [
+            17
+          ],
+          "valid_cited_chunk_ids": [
+            17
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 4,
+          "claim": "Plasma biomarker results require clinical context because elevated phosphorylated tau can occur in other neurodegenerative or systemic conditions, and assay methods and reference ranges are not yet fully standardized.",
+          "cited_chunk_ids": [
+            20
+          ],
+          "valid_cited_chunk_ids": [
+            20
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        }
+      ],
+      "citations": [
+        {
+          "chunk_id": 17,
+          "section": "8. Advances in diagnosis and biomarkers",
+          "pages": [
+            10,
+            11
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.639800074174796
+        },
+        {
+          "chunk_id": 20,
+          "section": "8.3. Limitations and practical challenges of biomarker implementation",
+          "pages": [
+            12
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.562983569806064
+        }
+      ],
+      "fully_grounded": true
+    },
+    {
+      "question": "What is the importance of plasma p-tau217 in Alzheimer's disease diagnosis?",
+      "status": "evaluated",
+      "best_similarity": 0.622889602592864,
+      "rewritten_query": "What is the importance of plasma phosphorylated tau 217 (p-tau217) in diagnosing Alzheimer's disease?",
+      "multi_queries": [
+        "What is the importance of plasma phosphorylated tau 217 (p-tau217) in diagnosing Alzheimer's disease?",
+        "What is the diagnostic significance of plasma phosphorylated tau at threonine 217 (p-tau217) in Alzheimer's disease?",
+        "What is the clinical utility of blood-based p-tau217 as a biomarker for Alzheimer's disease diagnosis?"
+      ],
+      "retrieved_chunk_ids": [
+        17,
+        20,
+        19,
+        21,
+        30
+      ],
+      "raw_claim_output": "CLAIM_1: Plasma p-tau217 is an accurate “Core 1” biomarker that can establish a biological diagnosis of Alzheimer’s disease, even in asymptomatic individuals.\nCITES_1: 17\n\nCLAIM_2: Plasma p-tau217 correlates well with PET and cerebrospinal fluid findings and helps predict progression from preclinical to symptomatic Alzheimer’s disease.\nCITES_2: 17\n\nCLAIM_3: As a blood-based biomarker, plasma p-tau217 is less invasive, more accessible, and less expensive than cerebrospinal fluid testing or PET, supporting large-scale screening and longitudinal monitoring.\nCITES_3: 17\n\nCLAIM_4: Plasma p-tau217 results require clinical and cognitive contextualization because elevated plasma phosphorylated tau may occur in other neurodegenerative or systemic conditions.\nCITES_4: 20\n\nCLAIM_5: Variability among plasma assay platforms, laboratory methods, sample handling, and reference ranges currently limits standardization and cross-platform reproducibility.\nCITES_5: 20",
+      "claims": [
+        {
+          "number": 1,
+          "claim": "Plasma p-tau217 is an accurate “Core 1” biomarker that can establish a biological diagnosis of Alzheimer’s disease, even in asymptomatic individuals.",
+          "cited_chunk_ids": [
+            17
+          ],
+          "valid_cited_chunk_ids": [
+            17
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 2,
+          "claim": "Plasma p-tau217 correlates well with PET and cerebrospinal fluid findings and helps predict progression from preclinical to symptomatic Alzheimer’s disease.",
+          "cited_chunk_ids": [
+            17
+          ],
+          "valid_cited_chunk_ids": [
+            17
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 3,
+          "claim": "As a blood-based biomarker, plasma p-tau217 is less invasive, more accessible, and less expensive than cerebrospinal fluid testing or PET, supporting large-scale screening and longitudinal monitoring.",
+          "cited_chunk_ids": [
+            17
+          ],
+          "valid_cited_chunk_ids": [
+            17
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 4,
+          "claim": "Plasma p-tau217 results require clinical and cognitive contextualization because elevated plasma phosphorylated tau may occur in other neurodegenerative or systemic conditions.",
+          "cited_chunk_ids": [
+            20
+          ],
+          "valid_cited_chunk_ids": [
+            20
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 5,
+          "claim": "Variability among plasma assay platforms, laboratory methods, sample handling, and reference ranges currently limits standardization and cross-platform reproducibility.",
+          "cited_chunk_ids": [
+            20
+          ],
+          "valid_cited_chunk_ids": [
+            20
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        }
+      ],
+      "citations": [
+        {
+          "chunk_id": 17,
+          "section": "8. Advances in diagnosis and biomarkers",
+          "pages": [
+            10,
+            11
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.622889602592864
+        },
+        {
+          "chunk_id": 20,
+          "section": "8.3. Limitations and practical challenges of biomarker implementation",
+          "pages": [
+            12
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.548406125695466
+        }
+      ],
+      "fully_grounded": true
+    },
+    {
+      "question": "How do cholinesterase inhibitors treat Alzheimer's disease?",
+      "status": "evaluated",
+      "best_similarity": 0.570687336473361,
+      "rewritten_query": "How do cholinesterase inhibitors treat Alzheimer's disease?",
+      "multi_queries": [
+        "How do cholinesterase inhibitors treat Alzheimer's disease?",
+        "What is the therapeutic mechanism of cholinesterase inhibitors in Alzheimer's disease?",
+        "How do acetylcholinesterase inhibitors produce therapeutic effects in Alzheimer's disease?"
+      ],
+      "retrieved_chunk_ids": [
+        32,
+        15,
+        40,
+        41,
+        39
+      ],
+      "raw_claim_output": "CLAIM_1: Alzheimer’s disease causes degeneration of basal forebrain cholinergic neurons, reducing cholinergic input involved in memory and cortical information processing.\nCITES_1: 15,32\n\nCLAIM_2: Cholinesterase inhibitors inhibit acetylcholine breakdown at the synaptic cleft, prolonging its action and enhancing cholinergic neurotransmission.\nCITES_2: 15,32\n\nCLAIM_3: This mechanism partially compensates for the loss of cholinergic neurons and provides modest symptomatic benefit rather than treating the underlying disease pathology.\nCITES_3: 32,40\n\nCLAIM_4: Donepezil, rivastigmine, and galantamine are cholinesterase inhibitors used as standard Alzheimer’s therapy.\nCITES_4: 32\n\nCLAIM_5: Cholinesterase inhibitors are typically started in early-to-intermediate symptomatic disease and may be continued into advanced stages when tolerated and beneficial.\nCITES_5: 39",
+      "claims": [
+        {
+          "number": 1,
+          "claim": "Alzheimer’s disease causes degeneration of basal forebrain cholinergic neurons, reducing cholinergic input involved in memory and cortical information processing.",
+          "cited_chunk_ids": [
+            15,
+            32
+          ],
+          "valid_cited_chunk_ids": [
+            15,
+            32
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 2,
+          "claim": "Cholinesterase inhibitors inhibit acetylcholine breakdown at the synaptic cleft, prolonging its action and enhancing cholinergic neurotransmission.",
+          "cited_chunk_ids": [
+            15,
+            32
+          ],
+          "valid_cited_chunk_ids": [
+            15,
+            32
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 3,
+          "claim": "This mechanism partially compensates for the loss of cholinergic neurons and provides modest symptomatic benefit rather than treating the underlying disease pathology.",
+          "cited_chunk_ids": [
+            32,
+            40
+          ],
+          "valid_cited_chunk_ids": [
+            32,
+            40
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 4,
+          "claim": "Donepezil, rivastigmine, and galantamine are cholinesterase inhibitors used as standard Alzheimer’s therapy.",
+          "cited_chunk_ids": [
+            32
+          ],
+          "valid_cited_chunk_ids": [
+            32
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 5,
+          "claim": "Cholinesterase inhibitors are typically started in early-to-intermediate symptomatic disease and may be continued into advanced stages when tolerated and beneficial.",
+          "cited_chunk_ids": [
+            39
+          ],
+          "valid_cited_chunk_ids": [
+            39
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        }
+      ],
+      "citations": [
+        {
+          "chunk_id": 15,
+          "section": "7.5. Cholinergic neurotransmission",
+          "pages": [
+            9
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.568061788859017
+        },
+        {
+          "chunk_id": 32,
+          "section": "11.1. Established symptomatic therapies",
+          "pages": [
+            19
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.570687336473361
+        },
+        {
+          "chunk_id": 40,
+          "section": "11.8. Novel treatment approaches",
+          "pages": [
+            22,
+            23
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.501082293430658
+        },
+        {
+          "chunk_id": 39,
+          "section": "11.7. Natural history of treatment use",
+          "pages": [
+            22
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.47056542434137
+        }
+      ],
+      "fully_grounded": true
+    },
+    {
+      "question": "What is the role of memantine in Alzheimer's disease treatment?",
+      "status": "evaluated",
+      "best_similarity": 0.569829557301947,
+      "rewritten_query": "What is the role of memantine in the treatment of Alzheimer's disease?",
+      "multi_queries": [
+        "What is the role of memantine in the treatment of Alzheimer's disease?",
+        "How is memantine used in the management of Alzheimer's disease?",
+        "What therapeutic role does memantine have in Alzheimer's disease?"
+      ],
+      "retrieved_chunk_ids": [
+        32,
+        39,
+        41,
+        40,
+        31
+      ],
+      "raw_claim_output": "CLAIM_1: Memantine is an FDA-approved symptomatic cognitive treatment for Alzheimer’s disease, not a disease-modifying therapy targeting the underlying pathology.\nCITES_1: 40,41\n\nCLAIM_2: Memantine is a partial NMDA-type glutamate receptor antagonist that modulates glutamate neurotransmission.\nCITES_2: 32\n\nCLAIM_3: Memantine is generally used in moderate-to-severe or intermediate-to-late Alzheimer’s disease and may be continued while meaningful clinical benefit persists.\nCITES_3: 32,39\n\nCLAIM_4: Its proposed mechanism is reducing excessive calcium influx and excitotoxic neuronal damage, although this mechanism remains incompletely proven.\nCITES_4: 32\n\nCLAIM_5: In moderate-to-severe Alzheimer’s disease, combining memantine with a cholinesterase inhibitor such as donepezil can improve outcomes and delay institutionalization.\nCITES_5: 32\n\nCLAIM_6: In mild-to-moderate Alzheimer’s disease, adding memantine provides little benefit over a cholinesterase inhibitor alone.\nCITES_6: 32",
+      "claims": [
+        {
+          "number": 1,
+          "claim": "Memantine is an FDA-approved symptomatic cognitive treatment for Alzheimer’s disease, not a disease-modifying therapy targeting the underlying pathology.",
+          "cited_chunk_ids": [
+            40,
+            41
+          ],
+          "valid_cited_chunk_ids": [
+            40,
+            41
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 2,
+          "claim": "Memantine is a partial NMDA-type glutamate receptor antagonist that modulates glutamate neurotransmission.",
+          "cited_chunk_ids": [
+            32
+          ],
+          "valid_cited_chunk_ids": [
+            32
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 3,
+          "claim": "Memantine is generally used in moderate-to-severe or intermediate-to-late Alzheimer’s disease and may be continued while meaningful clinical benefit persists.",
+          "cited_chunk_ids": [
+            32,
+            39
+          ],
+          "valid_cited_chunk_ids": [
+            32,
+            39
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 4,
+          "claim": "Its proposed mechanism is reducing excessive calcium influx and excitotoxic neuronal damage, although this mechanism remains incompletely proven.",
+          "cited_chunk_ids": [
+            32
+          ],
+          "valid_cited_chunk_ids": [
+            32
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 5,
+          "claim": "In moderate-to-severe Alzheimer’s disease, combining memantine with a cholinesterase inhibitor such as donepezil can improve outcomes and delay institutionalization.",
+          "cited_chunk_ids": [
+            32
+          ],
+          "valid_cited_chunk_ids": [
+            32
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 6,
+          "claim": "In mild-to-moderate Alzheimer’s disease, adding memantine provides little benefit over a cholinesterase inhibitor alone.",
+          "cited_chunk_ids": [
+            32
+          ],
+          "valid_cited_chunk_ids": [
+            32
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        }
+      ],
+      "citations": [
+        {
+          "chunk_id": 40,
+          "section": "11.8. Novel treatment approaches",
+          "pages": [
+            22,
+            23
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.49634811614054
+        },
+        {
+          "chunk_id": 41,
+          "section": "11.8. Novel treatment approaches",
+          "pages": [
+            23
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.505001626631996
+        },
+        {
+          "chunk_id": 32,
+          "section": "11.1. Established symptomatic therapies",
+          "pages": [
+            19
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.569829557301947
+        },
+        {
+          "chunk_id": 39,
+          "section": "11.7. Natural history of treatment use",
+          "pages": [
+            22
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.536682543555972
+        }
+      ],
+      "fully_grounded": true
+    },
+    {
+      "question": "How does lecanemab work in Alzheimer's disease?",
+      "status": "evaluated",
+      "best_similarity": 0.615536966248607,
+      "rewritten_query": "How does lecanemab work in Alzheimer's disease?",
+      "multi_queries": [
+        "How does lecanemab work in Alzheimer's disease?",
+        "What is the mechanism of action of lecanemab in Alzheimer's disease?",
+        "How does lecanemab exert its therapeutic effects in Alzheimer disease?"
+      ],
+      "retrieved_chunk_ids": [
+        35,
+        40,
+        41,
+        46,
+        31
+      ],
+      "raw_claim_output": "CLAIM_1: Lecanemab is a disease-modifying anti-amyloid monoclonal antibody that binds amyloid-β species and facilitates their clearance.\nCITES_1: 35,41\n\nCLAIM_2: By directly reducing amyloid-β pathology, lecanemab modestly slows cognitive and functional decline in selected patients with early Alzheimer’s disease rather than merely treating symptoms.\nCITES_2: 35,40\n\nCLAIM_3: In the 18-month CLARITY-AD Phase III trial, lecanemab produced robust amyloid reduction and statistically significant slowing of cognitive decline in early Alzheimer’s disease.\nCITES_3: 35\n\nCLAIM_4: Amyloid-lowering antibodies can cause amyloid-related imaging abnormalities, including vasogenic edema and microhemorrhages or superficial siderosis, so careful patient selection and MRI surveillance are essential.\nCITES_4: 35",
+      "claims": [
+        {
+          "number": 1,
+          "claim": "Lecanemab is a disease-modifying anti-amyloid monoclonal antibody that binds amyloid-β species and facilitates their clearance.",
+          "cited_chunk_ids": [
+            35,
+            41
+          ],
+          "valid_cited_chunk_ids": [
+            35,
+            41
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 2,
+          "claim": "By directly reducing amyloid-β pathology, lecanemab modestly slows cognitive and functional decline in selected patients with early Alzheimer’s disease rather than merely treating symptoms.",
+          "cited_chunk_ids": [
+            35,
+            40
+          ],
+          "valid_cited_chunk_ids": [
+            35,
+            40
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 3,
+          "claim": "In the 18-month CLARITY-AD Phase III trial, lecanemab produced robust amyloid reduction and statistically significant slowing of cognitive decline in early Alzheimer’s disease.",
+          "cited_chunk_ids": [
+            35
+          ],
+          "valid_cited_chunk_ids": [
+            35
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 4,
+          "claim": "Amyloid-lowering antibodies can cause amyloid-related imaging abnormalities, including vasogenic edema and microhemorrhages or superficial siderosis, so careful patient selection and MRI surveillance are essential.",
+          "cited_chunk_ids": [
+            35
+          ],
+          "valid_cited_chunk_ids": [
+            35
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        }
+      ],
+      "citations": [
+        {
+          "chunk_id": 35,
+          "section": "11.4. Disease-modifying therapies and monoclonal antibodies",
+          "pages": [
+            20,
+            21
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.615536966248607
+        },
+        {
+          "chunk_id": 41,
+          "section": "11.8. Novel treatment approaches",
+          "pages": [
+            23
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.522180002172402
+        },
+        {
+          "chunk_id": 40,
+          "section": "11.8. Novel treatment approaches",
+          "pages": [
+            22,
+            23
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.590149781539254
+        }
+      ],
+      "fully_grounded": true
+    },
+    {
+      "question": "How does donanemab work in Alzheimer's disease?",
+      "status": "evaluated",
+      "best_similarity": 0.618049090551616,
+      "rewritten_query": "How does donanemab work in Alzheimer's disease?",
+      "multi_queries": [
+        "How does donanemab work in Alzheimer's disease?",
+        "What is the mechanism of action of donanemab in Alzheimer’s disease?",
+        "By what pharmacological mechanism does donanemab act in Alzheimer’s disease?"
+      ],
+      "retrieved_chunk_ids": [
+        35,
+        40,
+        41,
+        11,
+        36
+      ],
+      "raw_claim_output": "CLAIM_1: Donanemab is a disease-modifying anti-amyloid monoclonal antibody that directly targets amyloid-β pathology in early-stage Alzheimer’s disease.\nCITES_1: 40,41\n\nCLAIM_2: Anti-amyloid monoclonal antibodies bind aggregated or soluble amyloid-β species and facilitate their clearance.\nCITES_2: 35\n\nCLAIM_3: Donanemab treatment has been associated with amyloid reduction and modest slowing of cognitive and functional decline in selected patients with early symptomatic Alzheimer’s disease.\nCITES_3: 35,40\n\nCLAIM_4: Amyloid-lowering monoclonal antibodies can cause amyloid-related imaging abnormalities, including vasogenic edema and microhemorrhages or superficial siderosis.\nCITES_4: 35",
+      "claims": [
+        {
+          "number": 1,
+          "claim": "Donanemab is a disease-modifying anti-amyloid monoclonal antibody that directly targets amyloid-β pathology in early-stage Alzheimer’s disease.",
+          "cited_chunk_ids": [
+            40,
+            41
+          ],
+          "valid_cited_chunk_ids": [
+            40,
+            41
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 2,
+          "claim": "Anti-amyloid monoclonal antibodies bind aggregated or soluble amyloid-β species and facilitate their clearance.",
+          "cited_chunk_ids": [
+            35
+          ],
+          "valid_cited_chunk_ids": [
+            35
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 3,
+          "claim": "Donanemab treatment has been associated with amyloid reduction and modest slowing of cognitive and functional decline in selected patients with early symptomatic Alzheimer’s disease.",
+          "cited_chunk_ids": [
+            35,
+            40
+          ],
+          "valid_cited_chunk_ids": [
+            35,
+            40
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 4,
+          "claim": "Amyloid-lowering monoclonal antibodies can cause amyloid-related imaging abnormalities, including vasogenic edema and microhemorrhages or superficial siderosis.",
+          "cited_chunk_ids": [
+            35
+          ],
+          "valid_cited_chunk_ids": [
+            35
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        }
+      ],
+      "citations": [
+        {
+          "chunk_id": 40,
+          "section": "11.8. Novel treatment approaches",
+          "pages": [
+            22,
+            23
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.61702844112969
+        },
+        {
+          "chunk_id": 41,
+          "section": "11.8. Novel treatment approaches",
+          "pages": [
+            23
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.545967164308081
+        },
+        {
+          "chunk_id": 35,
+          "section": "11.4. Disease-modifying therapies and monoclonal antibodies",
+          "pages": [
+            20,
+            21
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.618049090551616
+        }
+      ],
+      "fully_grounded": true
+    },
+    {
+      "question": "What lifestyle interventions may reduce Alzheimer's disease risk?",
+      "status": "evaluated",
+      "best_similarity": 0.671520905692616,
+      "rewritten_query": "What lifestyle interventions may reduce the risk of Alzheimer's disease?",
+      "multi_queries": [
+        "What lifestyle interventions may reduce the risk of Alzheimer's disease?",
+        "Which lifestyle modifications may lower the risk of developing Alzheimer's disease?",
+        "What behavioral interventions are associated with reduced Alzheimer's disease risk?"
+      ],
+      "retrieved_chunk_ids": [
+        33,
+        45,
+        4,
+        31,
+        46
+      ],
+      "raw_claim_output": "CLAIM_1: Regular physical activity may reduce Alzheimer’s disease risk.\nCITES_1: 33\n\nCLAIM_2: Mediterranean- or MIND-style diets rich in fruits, vegetables, whole grains, unsaturated fats, and bioactive compounds are associated with more favorable cognitive outcomes.\nCITES_2: 33\n\nCLAIM_3: Avoiding tobacco and harmful alcohol use may help reduce cognitive decline and dementia risk.\nCITES_3: 33\n\nCLAIM_4: Structured cognitive training, brainteasers, problem-solving, and other mentally demanding activities are associated with delayed cognitive decline.\nCITES_4: 33\n\nCLAIM_5: Managing hypertension, diabetes, and other vascular or metabolic risks may reduce Alzheimer’s disease risk.\nCITES_5: 33,45\n\nCLAIM_6: Cognitive and social engagement may help reduce dementia incidence or delay its onset at the population level.\nCITES_6: 45",
+      "claims": [
+        {
+          "number": 1,
+          "claim": "Regular physical activity may reduce Alzheimer’s disease risk.",
+          "cited_chunk_ids": [
+            33
+          ],
+          "valid_cited_chunk_ids": [
+            33
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 2,
+          "claim": "Mediterranean- or MIND-style diets rich in fruits, vegetables, whole grains, unsaturated fats, and bioactive compounds are associated with more favorable cognitive outcomes.",
+          "cited_chunk_ids": [
+            33
+          ],
+          "valid_cited_chunk_ids": [
+            33
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 3,
+          "claim": "Avoiding tobacco and harmful alcohol use may help reduce cognitive decline and dementia risk.",
+          "cited_chunk_ids": [
+            33
+          ],
+          "valid_cited_chunk_ids": [
+            33
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 4,
+          "claim": "Structured cognitive training, brainteasers, problem-solving, and other mentally demanding activities are associated with delayed cognitive decline.",
+          "cited_chunk_ids": [
+            33
+          ],
+          "valid_cited_chunk_ids": [
+            33
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 5,
+          "claim": "Managing hypertension, diabetes, and other vascular or metabolic risks may reduce Alzheimer’s disease risk.",
+          "cited_chunk_ids": [
+            33,
+            45
+          ],
+          "valid_cited_chunk_ids": [
+            33,
+            45
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 6,
+          "claim": "Cognitive and social engagement may help reduce dementia incidence or delay its onset at the population level.",
+          "cited_chunk_ids": [
+            45
+          ],
+          "valid_cited_chunk_ids": [
+            45
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        }
+      ],
+      "citations": [
+        {
+          "chunk_id": 33,
+          "section": "11.2. Cognitive and non-pharmacological interventions",
+          "pages": [
+            19,
+            20
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.671520905692616
+        },
+        {
+          "chunk_id": 45,
+          "section": "13. Challenges, heterogeneity, and future directions",
+          "pages": [
+            25
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.522263379320976
+        }
+      ],
+      "fully_grounded": true
+    },
+    {
+      "question": "What are the main challenges and future directions in Alzheimer's disease treatment?",
+      "status": "evaluated",
+      "best_similarity": 0.693697663025351,
+      "rewritten_query": "What are the main challenges and future directions in Alzheimer's disease treatment?",
+      "multi_queries": [
+        "What are the main challenges and future directions in Alzheimer's disease treatment?",
+        "What are the key obstacles and emerging future strategies in the treatment of Alzheimer’s disease?",
+        "What are the major limitations of current Alzheimer’s disease therapies and priorities for future treatment development?"
+      ],
+      "retrieved_chunk_ids": [
+        45,
+        46,
+        40,
+        36,
+        35
+      ],
+      "raw_claim_output": "CLAIM_1: Disease heterogeneity complicates clinical-trial design and limits one-size-fits-all treatment strategies.\nCITES_1: 45\n\nCLAIM_2: Current treatments remain limited because traditional drugs provide only modest symptomatic benefit, while anti-amyloid antibodies produce modest slowing of decline in selected patients.\nCITES_2: 40,35\n\nCLAIM_3: Meaningful disease modification may require treatment during preclinical or very early symptomatic stages, supported by scalable biomarkers and individualized risk stratification.\nCITES_3: 45,46\n\nCLAIM_4: Failures of amyloid-, tau-, and metabolic-targeted trials show that biological or biomarker effects do not necessarily translate into meaningful clinical benefit.\nCITES_4: 45,36\n\nCLAIM_5: Future treatment will likely use personalized, multimodal strategies combining therapies against amyloid, tau, neuroinflammation, synaptic injury, and vascular or metabolic dysfunction.\nCITES_5: 45,46\n\nCLAIM_6: Preventive strategies promoting cardiovascular health, exercise, balanced nutrition, and cognitive and social engagement may reduce dementia incidence or delay its onset.\nCITES_6: 45",
+      "claims": [
+        {
+          "number": 1,
+          "claim": "Disease heterogeneity complicates clinical-trial design and limits one-size-fits-all treatment strategies.",
+          "cited_chunk_ids": [
+            45
+          ],
+          "valid_cited_chunk_ids": [
+            45
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 2,
+          "claim": "Current treatments remain limited because traditional drugs provide only modest symptomatic benefit, while anti-amyloid antibodies produce modest slowing of decline in selected patients.",
+          "cited_chunk_ids": [
+            40,
+            35
+          ],
+          "valid_cited_chunk_ids": [
+            40,
+            35
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 3,
+          "claim": "Meaningful disease modification may require treatment during preclinical or very early symptomatic stages, supported by scalable biomarkers and individualized risk stratification.",
+          "cited_chunk_ids": [
+            45,
+            46
+          ],
+          "valid_cited_chunk_ids": [
+            45,
+            46
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 4,
+          "claim": "Failures of amyloid-, tau-, and metabolic-targeted trials show that biological or biomarker effects do not necessarily translate into meaningful clinical benefit.",
+          "cited_chunk_ids": [
+            45,
+            36
+          ],
+          "valid_cited_chunk_ids": [
+            45,
+            36
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": false,
+          "judge_error": false,
+          "judge_raw_output": "UNSUPPORTED"
+        },
+        {
+          "number": 5,
+          "claim": "Future treatment will likely use personalized, multimodal strategies combining therapies against amyloid, tau, neuroinflammation, synaptic injury, and vascular or metabolic dysfunction.",
+          "cited_chunk_ids": [
+            45,
+            46
+          ],
+          "valid_cited_chunk_ids": [
+            45,
+            46
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        },
+        {
+          "number": 6,
+          "claim": "Preventive strategies promoting cardiovascular health, exercise, balanced nutrition, and cognitive and social engagement may reduce dementia incidence or delay its onset.",
+          "cited_chunk_ids": [
+            45
+          ],
+          "valid_cited_chunk_ids": [
+            45
+          ],
+          "invalid_cited_chunk_ids": [],
+          "has_citation": true,
+          "all_citations_valid": true,
+          "supported": true,
+          "judge_error": false,
+          "judge_raw_output": "SUPPORTED"
+        }
+      ],
+      "citations": [
+        {
+          "chunk_id": 45,
+          "section": "13. Challenges, heterogeneity, and future directions",
+          "pages": [
+            25
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.693697663025351
+        },
+        {
+          "chunk_id": 40,
+          "section": "11.8. Novel treatment approaches",
+          "pages": [
+            22,
+            23
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.644873020026552
+        },
+        {
+          "chunk_id": 35,
+          "section": "11.4. Disease-modifying therapies and monoclonal antibodies",
+          "pages": [
+            20,
+            21
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.569692474107628
+        },
+        {
+          "chunk_id": 46,
+          "section": "14. Conclusions",
+          "pages": [
+            25,
+            26
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.649357049625138
+        },
+        {
+          "chunk_id": 36,
+          "section": "11.4. Disease-modifying therapies and monoclonal antibodies",
+          "pages": [
+            21
+          ],
+          "source": "neurosci.pdf",
+          "retrieval_score": 0.582548769450207
+        }
+      ],
+      "fully_grounded": false
+    }
+  ]
+}

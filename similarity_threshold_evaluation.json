@@ -1,0 +1,1353 @@
+{
+  "settings": {
+    "candidate_k": 10,
+    "embedding_model": "text-embedding-3-large",
+    "query_generator_model": "gpt-5.6-sol",
+    "retrieval_method": "multi_query_max_real_cosine_similarity",
+    "in_scope_count": 20,
+    "out_of_scope_count": 20
+  },
+  "distribution": {
+    "average_in_scope": 0.644105897247457,
+    "minimum_in_scope": 0.564292127471349,
+    "average_out_of_scope": 0.2574428453996696,
+    "maximum_out_of_scope": 0.520799987069411,
+    "separation_gap": 0.04349214040193805
+  },
+  "best_balanced_threshold": {
+    "threshold": 0.56,
+    "tp": 20,
+    "fn": 0,
+    "fp": 0,
+    "tn": 20,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "specificity": 1.0,
+    "f1": 1.0,
+    "balanced_accuracy": 1.0,
+    "false_positive_rate": 0.0,
+    "false_negative_rate": 0.0
+  },
+  "safe_threshold_candidate": {
+    "threshold": 0.45,
+    "tp": 20,
+    "fn": 0,
+    "fp": 1,
+    "tn": 19,
+    "accuracy": 0.975,
+    "precision": 0.9523809523809523,
+    "recall": 1.0,
+    "specificity": 0.95,
+    "f1": 0.975609756097561,
+    "balanced_accuracy": 0.975,
+    "false_positive_rate": 0.05,
+    "false_negative_rate": 0.0
+  },
+  "current_threshold_035": {
+    "threshold": 0.35,
+    "tp": 20,
+    "fn": 0,
+    "fp": 6,
+    "tn": 14,
+    "accuracy": 0.85,
+    "precision": 0.7692307692307693,
+    "recall": 1.0,
+    "specificity": 0.7,
+    "f1": 0.8695652173913044,
+    "balanced_accuracy": 0.85,
+    "false_positive_rate": 0.3,
+    "false_negative_rate": 0.0
+  },
+  "threshold_sweep": [
+    {
+      "threshold": 0.2,
+      "tp": 20,
+      "fn": 0,
+      "fp": 9,
+      "tn": 11,
+      "accuracy": 0.775,
+      "precision": 0.6896551724137931,
+      "recall": 1.0,
+      "specificity": 0.55,
+      "f1": 0.8163265306122449,
+      "balanced_accuracy": 0.775,
+      "false_positive_rate": 0.45,
+      "false_negative_rate": 0.0
+    },
+    {
+      "threshold": 0.21,
+      "tp": 20,
+      "fn": 0,
+      "fp": 9,
+      "tn": 11,
+      "accuracy": 0.775,
+      "precision": 0.6896551724137931,
+      "recall": 1.0,
+      "specificity": 0.55,
+      "f1": 0.8163265306122449,
+      "balanced_accuracy": 0.775,
+      "false_positive_rate": 0.45,
+      "false_negative_rate": 0.0
+    },
+    {
+      "threshold": 0.22,
+      "tp": 20,
+      "fn": 0,
+      "fp": 9,
+      "tn": 11,
+      "accuracy": 0.775,
+      "precision": 0.6896551724137931,
+      "recall": 1.0,
+      "specificity": 0.55,
+      "f1": 0.8163265306122449,
+      "balanced_accuracy": 0.775,
+      "false_positive_rate": 0.45,
+      "false_negative_rate": 0.0
+    },
+    {
+      "threshold": 0.23,
+      "tp": 20,
+      "fn": 0,
+      "fp": 9,
+      "tn": 11,
+      "accuracy": 0.775,
+      "precision": 0.6896551724137931,
+      "recall": 1.0,
+      "specificity": 0.55,
+      "f1": 0.8163265306122449,
+      "balanced_accuracy": 0.775,
+      "false_positive_rate": 0.45,
+      "false_negative_rate": 0.0
+    },
+    {
+      "threshold": 0.24,
+      "tp": 20,
+      "fn": 0,
+      "fp": 9,
+      "tn": 11,
+      "accuracy": 0.775,
+      "precision": 0.6896551724137931,
+      "recall": 1.0,
+      "specificity": 0.55,
+      "f1": 0.8163265306122449,
+      "balanced_accuracy": 0.775,
+      "false_positive_rate": 0.45,
+      "false_negative_rate": 0.0
+    },
+    {
+      "threshold": 0.25,
+      "tp": 20,
+      "fn": 0,
+      "fp": 9,
+      "tn": 11,
+      "accuracy": 0.775,
+      "precision": 0.6896551724137931,
+      "recall": 1.0,
+      "specificity": 0.55,
+      "f1": 0.8163265306122449,
+      "balanced_accuracy": 0.775,
+      "false_positive_rate": 0.45,
+      "false_negative_rate": 0.0
+    },
+    {
+      "threshold": 0.26,
+      "tp": 20,
+      "fn": 0,
+      "fp": 9,
+      "tn": 11,
+      "accuracy": 0.775,
+      "precision": 0.6896551724137931,
+      "recall": 1.0,
+      "specificity": 0.55,
+      "f1": 0.8163265306122449,
+      "balanced_accuracy": 0.775,
+      "false_positive_rate": 0.45,
+      "false_negative_rate": 0.0
+    },
+    {
+      "threshold": 0.27,
+      "tp": 20,
+      "fn": 0,
+      "fp": 9,
+      "tn": 11,
+      "accuracy": 0.775,
+      "precision": 0.6896551724137931,
+      "recall": 1.0,
+      "specificity": 0.55,
+      "f1": 0.8163265306122449,
+      "balanced_accuracy": 0.775,
+      "false_positive_rate": 0.45,
+      "false_negative_rate": 0.0
+    },
+    {
+      "threshold": 0.28,
+      "tp": 20,
+      "fn": 0,
+      "fp": 9,
+      "tn": 11,
+      "accuracy": 0.775,
+      "precision": 0.6896551724137931,
+      "recall": 1.0,
+      "specificity": 0.55,
+      "f1": 0.8163265306122449,
+      "balanced_accuracy": 0.775,
+      "false_positive_rate": 0.45,
+      "false_negative_rate": 0.0
+    },
+    {
+      "threshold": 0.29,
+      "tp": 20,
+      "fn": 0,
+      "fp": 9,
+      "tn": 11,
+      "accuracy": 0.775,
+      "precision": 0.6896551724137931,
+      "recall": 1.0,
+      "specificity": 0.55,
+      "f1": 0.8163265306122449,
+      "balanced_accuracy": 0.775,
+      "false_positive_rate": 0.45,
+      "false_negative_rate": 0.0
+    },
+    {
+      "threshold": 0.3,
+      "tp": 20,
+      "fn": 0,
+      "fp": 9,
+      "tn": 11,
+      "accuracy": 0.775,
+      "precision": 0.6896551724137931,
+      "recall": 1.0,
+      "specificity": 0.55,
+      "f1": 0.8163265306122449,
+      "balanced_accuracy": 0.775,
+      "false_positive_rate": 0.45,
+      "false_negative_rate": 0.0
+    },
+    {
+      "threshold": 0.31,
+      "tp": 20,
+      "fn": 0,
+      "fp": 9,
+      "tn": 11,
+      "accuracy": 0.775,
+      "precision": 0.6896551724137931,
+      "recall": 1.0,
+      "specificity": 0.55,
+      "f1": 0.8163265306122449,
+      "balanced_accuracy": 0.775,
+      "false_positive_rate": 0.45,
+      "false_negative_rate": 0.0
+    },
+    {
+      "threshold": 0.32,
+      "tp": 20,
+      "fn": 0,
+      "fp": 7,
+      "tn": 13,
+      "accuracy": 0.825,
+      "precision": 0.7407407407407407,
+      "recall": 1.0,
+      "specificity": 0.65,
+      "f1": 0.851063829787234,
+      "balanced_accuracy": 0.825,
+      "false_positive_rate": 0.35,
+      "false_negative_rate": 0.0
+    },
+    {
+      "threshold": 0.33,
+      "tp": 20,
+      "fn": 0,
+      "fp": 6,
+      "tn": 14,
+      "accuracy": 0.85,
+      "precision": 0.7692307692307693,
+      "recall": 1.0,
+      "specificity": 0.7,
+      "f1": 0.8695652173913044,
+      "balanced_accuracy": 0.85,
+      "false_positive_rate": 0.3,
+      "false_negative_rate": 0.0
+    },
+    {
+      "threshold": 0.34,
+      "tp": 20,
+      "fn": 0,
+      "fp": 6,
+      "tn": 14,
+      "accuracy": 0.85,
+      "precision": 0.7692307692307693,
+      "recall": 1.0,
+      "specificity": 0.7,
+      "f1": 0.8695652173913044,
+      "balanced_accuracy": 0.85,
+      "false_positive_rate": 0.3,
+      "false_negative_rate": 0.0
+    },
+    {
+      "threshold": 0.35,
+      "tp": 20,
+      "fn": 0,
+      "fp": 6,
+      "tn": 14,
+      "accuracy": 0.85,
+      "precision": 0.7692307692307693,
+      "recall": 1.0,
+      "specificity": 0.7,
+      "f1": 0.8695652173913044,
+      "balanced_accuracy": 0.85,
+      "false_positive_rate": 0.3,
+      "false_negative_rate": 0.0
+    },
+    {
+      "threshold": 0.36,
+      "tp": 20,
+      "fn": 0,
+      "fp": 4,
+      "tn": 16,
+      "accuracy": 0.9,
+      "precision": 0.8333333333333334,
+      "recall": 1.0,
+      "specificity": 0.8,
+      "f1": 0.9090909090909091,
+      "balanced_accuracy": 0.9,
+      "false_positive_rate": 0.2,
+      "false_negative_rate": 0.0
+    },
+    {
+      "threshold": 0.37,
+      "tp": 20,
+      "fn": 0,
+      "fp": 3,
+      "tn": 17,
+      "accuracy": 0.925,
+      "precision": 0.8695652173913043,
+      "recall": 1.0,
+      "specificity": 0.85,
+      "f1": 0.9302325581395349,
+      "balanced_accuracy": 0.925,
+      "false_positive_rate": 0.15,
+      "false_negative_rate": 0.0
+    },
+    {
+      "threshold": 0.38,
+      "tp": 20,
+      "fn": 0,
+      "fp": 3,
+      "tn": 17,
+      "accuracy": 0.925,
+      "precision": 0.8695652173913043,
+      "recall": 1.0,
+      "specificity": 0.85,
+      "f1": 0.9302325581395349,
+      "balanced_accuracy": 0.925,
+      "false_positive_rate": 0.15,
+      "false_negative_rate": 0.0
+    },
+    {
+      "threshold": 0.39,
+      "tp": 20,
+      "fn": 0,
+      "fp": 3,
+      "tn": 17,
+      "accuracy": 0.925,
+      "precision": 0.8695652173913043,
+      "recall": 1.0,
+      "specificity": 0.85,
+      "f1": 0.9302325581395349,
+      "balanced_accuracy": 0.925,
+      "false_positive_rate": 0.15,
+      "false_negative_rate": 0.0
+    },
+    {
+      "threshold": 0.4,
+      "tp": 20,
+      "fn": 0,
+      "fp": 3,
+      "tn": 17,
+      "accuracy": 0.925,
+      "precision": 0.8695652173913043,
+      "recall": 1.0,
+      "specificity": 0.85,
+      "f1": 0.9302325581395349,
+      "balanced_accuracy": 0.925,
+      "false_positive_rate": 0.15,
+      "false_negative_rate": 0.0
+    },
+    {
+      "threshold": 0.41,
+      "tp": 20,
+      "fn": 0,
+      "fp": 3,
+      "tn": 17,
+      "accuracy": 0.925,
+      "precision": 0.8695652173913043,
+      "recall": 1.0,
+      "specificity": 0.85,
+      "f1": 0.9302325581395349,
+      "balanced_accuracy": 0.925,
+      "false_positive_rate": 0.15,
+      "false_negative_rate": 0.0
+    },
+    {
+      "threshold": 0.42,
+      "tp": 20,
+      "fn": 0,
+      "fp": 3,
+      "tn": 17,
+      "accuracy": 0.925,
+      "precision": 0.8695652173913043,
+      "recall": 1.0,
+      "specificity": 0.85,
+      "f1": 0.9302325581395349,
+      "balanced_accuracy": 0.925,
+      "false_positive_rate": 0.15,
+      "false_negative_rate": 0.0
+    },
+    {
+      "threshold": 0.43,
+      "tp": 20,
+      "fn": 0,
+      "fp": 3,
+      "tn": 17,
+      "accuracy": 0.925,
+      "precision": 0.8695652173913043,
+      "recall": 1.0,
+      "specificity": 0.85,
+      "f1": 0.9302325581395349,
+      "balanced_accuracy": 0.925,
+      "false_positive_rate": 0.15,
+      "false_negative_rate": 0.0
+    },
+    {
+      "threshold": 0.44,
+      "tp": 20,
+      "fn": 0,
+      "fp": 2,
+      "tn": 18,
+      "accuracy": 0.95,
+      "precision": 0.9090909090909091,
+      "recall": 1.0,
+      "specificity": 0.9,
+      "f1": 0.9523809523809523,
+      "balanced_accuracy": 0.95,
+      "false_positive_rate": 0.1,
+      "false_negative_rate": 0.0
+    },
+    {
+      "threshold": 0.45,
+      "tp": 20,
+      "fn": 0,
+      "fp": 1,
+      "tn": 19,
+      "accuracy": 0.975,
+      "precision": 0.9523809523809523,
+      "recall": 1.0,
+      "specificity": 0.95,
+      "f1": 0.975609756097561,
+      "balanced_accuracy": 0.975,
+      "false_positive_rate": 0.05,
+      "false_negative_rate": 0.0
+    },
+    {
+      "threshold": 0.46,
+      "tp": 20,
+      "fn": 0,
+      "fp": 1,
+      "tn": 19,
+      "accuracy": 0.975,
+      "precision": 0.9523809523809523,
+      "recall": 1.0,
+      "specificity": 0.95,
+      "f1": 0.975609756097561,
+      "balanced_accuracy": 0.975,
+      "false_positive_rate": 0.05,
+      "false_negative_rate": 0.0
+    },
+    {
+      "threshold": 0.47,
+      "tp": 20,
+      "fn": 0,
+      "fp": 1,
+      "tn": 19,
+      "accuracy": 0.975,
+      "precision": 0.9523809523809523,
+      "recall": 1.0,
+      "specificity": 0.95,
+      "f1": 0.975609756097561,
+      "balanced_accuracy": 0.975,
+      "false_positive_rate": 0.05,
+      "false_negative_rate": 0.0
+    },
+    {
+      "threshold": 0.48,
+      "tp": 20,
+      "fn": 0,
+      "fp": 1,
+      "tn": 19,
+      "accuracy": 0.975,
+      "precision": 0.9523809523809523,
+      "recall": 1.0,
+      "specificity": 0.95,
+      "f1": 0.975609756097561,
+      "balanced_accuracy": 0.975,
+      "false_positive_rate": 0.05,
+      "false_negative_rate": 0.0
+    },
+    {
+      "threshold": 0.49,
+      "tp": 20,
+      "fn": 0,
+      "fp": 1,
+      "tn": 19,
+      "accuracy": 0.975,
+      "precision": 0.9523809523809523,
+      "recall": 1.0,
+      "specificity": 0.95,
+      "f1": 0.975609756097561,
+      "balanced_accuracy": 0.975,
+      "false_positive_rate": 0.05,
+      "false_negative_rate": 0.0
+    },
+    {
+      "threshold": 0.5,
+      "tp": 20,
+      "fn": 0,
+      "fp": 1,
+      "tn": 19,
+      "accuracy": 0.975,
+      "precision": 0.9523809523809523,
+      "recall": 1.0,
+      "specificity": 0.95,
+      "f1": 0.975609756097561,
+      "balanced_accuracy": 0.975,
+      "false_positive_rate": 0.05,
+      "false_negative_rate": 0.0
+    },
+    {
+      "threshold": 0.51,
+      "tp": 20,
+      "fn": 0,
+      "fp": 1,
+      "tn": 19,
+      "accuracy": 0.975,
+      "precision": 0.9523809523809523,
+      "recall": 1.0,
+      "specificity": 0.95,
+      "f1": 0.975609756097561,
+      "balanced_accuracy": 0.975,
+      "false_positive_rate": 0.05,
+      "false_negative_rate": 0.0
+    },
+    {
+      "threshold": 0.52,
+      "tp": 20,
+      "fn": 0,
+      "fp": 1,
+      "tn": 19,
+      "accuracy": 0.975,
+      "precision": 0.9523809523809523,
+      "recall": 1.0,
+      "specificity": 0.95,
+      "f1": 0.975609756097561,
+      "balanced_accuracy": 0.975,
+      "false_positive_rate": 0.05,
+      "false_negative_rate": 0.0
+    },
+    {
+      "threshold": 0.53,
+      "tp": 20,
+      "fn": 0,
+      "fp": 0,
+      "tn": 20,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "specificity": 1.0,
+      "f1": 1.0,
+      "balanced_accuracy": 1.0,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.0
+    },
+    {
+      "threshold": 0.54,
+      "tp": 20,
+      "fn": 0,
+      "fp": 0,
+      "tn": 20,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "specificity": 1.0,
+      "f1": 1.0,
+      "balanced_accuracy": 1.0,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.0
+    },
+    {
+      "threshold": 0.55,
+      "tp": 20,
+      "fn": 0,
+      "fp": 0,
+      "tn": 20,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "specificity": 1.0,
+      "f1": 1.0,
+      "balanced_accuracy": 1.0,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.0
+    },
+    {
+      "threshold": 0.56,
+      "tp": 20,
+      "fn": 0,
+      "fp": 0,
+      "tn": 20,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "specificity": 1.0,
+      "f1": 1.0,
+      "balanced_accuracy": 1.0,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.0
+    },
+    {
+      "threshold": 0.57,
+      "tp": 18,
+      "fn": 2,
+      "fp": 0,
+      "tn": 20,
+      "accuracy": 0.95,
+      "precision": 1.0,
+      "recall": 0.9,
+      "specificity": 1.0,
+      "f1": 0.9473684210526316,
+      "balanced_accuracy": 0.95,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.1
+    },
+    {
+      "threshold": 0.58,
+      "tp": 18,
+      "fn": 2,
+      "fp": 0,
+      "tn": 20,
+      "accuracy": 0.95,
+      "precision": 1.0,
+      "recall": 0.9,
+      "specificity": 1.0,
+      "f1": 0.9473684210526316,
+      "balanced_accuracy": 0.95,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.1
+    },
+    {
+      "threshold": 0.59,
+      "tp": 18,
+      "fn": 2,
+      "fp": 0,
+      "tn": 20,
+      "accuracy": 0.95,
+      "precision": 1.0,
+      "recall": 0.9,
+      "specificity": 1.0,
+      "f1": 0.9473684210526316,
+      "balanced_accuracy": 0.95,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.1
+    },
+    {
+      "threshold": 0.6,
+      "tp": 17,
+      "fn": 3,
+      "fp": 0,
+      "tn": 20,
+      "accuracy": 0.925,
+      "precision": 1.0,
+      "recall": 0.85,
+      "specificity": 1.0,
+      "f1": 0.9189189189189189,
+      "balanced_accuracy": 0.925,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.15
+    },
+    {
+      "threshold": 0.61,
+      "tp": 16,
+      "fn": 4,
+      "fp": 0,
+      "tn": 20,
+      "accuracy": 0.9,
+      "precision": 1.0,
+      "recall": 0.8,
+      "specificity": 1.0,
+      "f1": 0.888888888888889,
+      "balanced_accuracy": 0.9,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.2
+    },
+    {
+      "threshold": 0.62,
+      "tp": 14,
+      "fn": 6,
+      "fp": 0,
+      "tn": 20,
+      "accuracy": 0.85,
+      "precision": 1.0,
+      "recall": 0.7,
+      "specificity": 1.0,
+      "f1": 0.8235294117647058,
+      "balanced_accuracy": 0.85,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.3
+    },
+    {
+      "threshold": 0.63,
+      "tp": 12,
+      "fn": 8,
+      "fp": 0,
+      "tn": 20,
+      "accuracy": 0.8,
+      "precision": 1.0,
+      "recall": 0.6,
+      "specificity": 1.0,
+      "f1": 0.7499999999999999,
+      "balanced_accuracy": 0.8,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.4
+    },
+    {
+      "threshold": 0.64,
+      "tp": 11,
+      "fn": 9,
+      "fp": 0,
+      "tn": 20,
+      "accuracy": 0.775,
+      "precision": 1.0,
+      "recall": 0.55,
+      "specificity": 1.0,
+      "f1": 0.7096774193548387,
+      "balanced_accuracy": 0.775,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.45
+    },
+    {
+      "threshold": 0.65,
+      "tp": 10,
+      "fn": 10,
+      "fp": 0,
+      "tn": 20,
+      "accuracy": 0.75,
+      "precision": 1.0,
+      "recall": 0.5,
+      "specificity": 1.0,
+      "f1": 0.6666666666666666,
+      "balanced_accuracy": 0.75,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.5
+    },
+    {
+      "threshold": 0.66,
+      "tp": 8,
+      "fn": 12,
+      "fp": 0,
+      "tn": 20,
+      "accuracy": 0.7,
+      "precision": 1.0,
+      "recall": 0.4,
+      "specificity": 1.0,
+      "f1": 0.5714285714285715,
+      "balanced_accuracy": 0.7,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.6
+    },
+    {
+      "threshold": 0.67,
+      "tp": 8,
+      "fn": 12,
+      "fp": 0,
+      "tn": 20,
+      "accuracy": 0.7,
+      "precision": 1.0,
+      "recall": 0.4,
+      "specificity": 1.0,
+      "f1": 0.5714285714285715,
+      "balanced_accuracy": 0.7,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.6
+    },
+    {
+      "threshold": 0.68,
+      "tp": 5,
+      "fn": 15,
+      "fp": 0,
+      "tn": 20,
+      "accuracy": 0.625,
+      "precision": 1.0,
+      "recall": 0.25,
+      "specificity": 1.0,
+      "f1": 0.4,
+      "balanced_accuracy": 0.625,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.75
+    },
+    {
+      "threshold": 0.69,
+      "tp": 3,
+      "fn": 17,
+      "fp": 0,
+      "tn": 20,
+      "accuracy": 0.575,
+      "precision": 1.0,
+      "recall": 0.15,
+      "specificity": 1.0,
+      "f1": 0.2608695652173913,
+      "balanced_accuracy": 0.575,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.85
+    },
+    {
+      "threshold": 0.7,
+      "tp": 1,
+      "fn": 19,
+      "fp": 0,
+      "tn": 20,
+      "accuracy": 0.525,
+      "precision": 1.0,
+      "recall": 0.05,
+      "specificity": 1.0,
+      "f1": 0.09523809523809523,
+      "balanced_accuracy": 0.525,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.95
+    }
+  ],
+  "in_scope_results": [
+    {
+      "question": "What are the main risk factors for Alzheimer's disease?",
+      "rewritten_query": "What are the main risk factors for Alzheimer's disease?",
+      "queries": [
+        "What are the main risk factors for Alzheimer's disease?",
+        "Which factors are most strongly associated with an increased risk of developing Alzheimer's disease?",
+        "What are the principal established risk factors for Alzheimer's disease?"
+      ],
+      "score": 0.672158518156361,
+      "top_chunk_id": 4,
+      "top_section": "3. Epidemiology, incidence, and risk factors",
+      "best_query": "Which factors are most strongly associated with an increased risk of developing Alzheimer's disease?"
+    },
+    {
+      "question": "What are the typical clinical symptoms of Alzheimer's disease?",
+      "rewritten_query": "What are the typical clinical symptoms of Alzheimer's disease?",
+      "queries": [
+        "What are the typical clinical symptoms of Alzheimer's disease?",
+        "What are the characteristic clinical manifestations of Alzheimer's disease?",
+        "What signs and symptoms commonly occur in Alzheimer's disease?"
+      ],
+      "score": 0.658907309513937,
+      "top_chunk_id": 5,
+      "top_section": "4.1. Typical presentation",
+      "best_query": "What are the typical clinical symptoms of Alzheimer's disease?"
+    },
+    {
+      "question": "What role does amyloid-beta play in Alzheimer's disease?",
+      "rewritten_query": "What role does amyloid-beta play in Alzheimer's disease?",
+      "queries": [
+        "What role does amyloid-beta play in Alzheimer's disease?",
+        "How does amyloid-beta contribute to the pathogenesis of Alzheimer's disease?",
+        "What is the involvement of amyloid-beta in Alzheimer's disease development and progression?"
+      ],
+      "score": 0.613713521953971,
+      "top_chunk_id": 13,
+      "top_section": "7.3. Amyloid versus tau hypotheses",
+      "best_query": "How does amyloid-beta contribute to the pathogenesis of Alzheimer's disease?"
+    },
+    {
+      "question": "What role does tau protein play in Alzheimer's disease?",
+      "rewritten_query": "What role does tau protein play in Alzheimer's disease?",
+      "queries": [
+        "What role does tau protein play in Alzheimer's disease?",
+        "How does tau protein contribute to the pathogenesis of Alzheimer's disease?",
+        "What is the role of tau in Alzheimer's disease pathology?"
+      ],
+      "score": 0.632420416141992,
+      "top_chunk_id": 13,
+      "top_section": "7.3. Amyloid versus tau hypotheses",
+      "best_query": "What is the role of tau in Alzheimer's disease pathology?"
+    },
+    {
+      "question": "How does neuroinflammation contribute to Alzheimer's disease?",
+      "rewritten_query": "How does neuroinflammation contribute to Alzheimer's disease?",
+      "queries": [
+        "How does neuroinflammation contribute to Alzheimer's disease?",
+        "What role does neuroinflammation play in the pathogenesis of Alzheimer's disease?",
+        "Through what mechanisms does neuroinflammation influence Alzheimer's disease progression?"
+      ],
+      "score": 0.656328188845368,
+      "top_chunk_id": 14,
+      "top_section": "7.4. Neuroinflammation and vascular contributions as modulators of amyloid and tau pathology",
+      "best_query": "Through what mechanisms does neuroinflammation influence Alzheimer's disease progression?"
+    },
+    {
+      "question": "What genetic factors are associated with Alzheimer's disease?",
+      "rewritten_query": "What genetic factors are associated with Alzheimer's disease?",
+      "queries": [
+        "What genetic factors are associated with Alzheimer's disease?",
+        "Which genes and genetic variants are associated with Alzheimer’s disease?",
+        "What inherited genetic factors are linked to Alzheimer’s disease?"
+      ],
+      "score": 0.646050004288335,
+      "top_chunk_id": 16,
+      "top_section": "7.6. Genetics",
+      "best_query": "Which genes and genetic variants are associated with Alzheimer’s disease?"
+    },
+    {
+      "question": "How does the APOE epsilon 4 allele affect Alzheimer's disease risk?",
+      "rewritten_query": "How does the APOE ε4 allele affect the risk of Alzheimer's disease?",
+      "queries": [
+        "How does the APOE ε4 allele affect the risk of Alzheimer's disease?",
+        "What is the association between the APOE ε4 allele and Alzheimer’s disease risk?",
+        "How does carrying the apolipoprotein E epsilon 4 allele influence susceptibility to Alzheimer’s disease?"
+      ],
+      "score": 0.61003361663908,
+      "top_chunk_id": 16,
+      "top_section": "7.6. Genetics",
+      "best_query": "How does carrying the apolipoprotein E epsilon 4 allele influence susceptibility to Alzheimer’s disease?"
+    },
+    {
+      "question": "How is Alzheimer's disease diagnosed?",
+      "rewritten_query": "How is Alzheimer's disease diagnosed?",
+      "queries": [
+        "How is Alzheimer's disease diagnosed?",
+        "What clinical methods and diagnostic criteria are used to diagnose Alzheimer's disease?",
+        "What evaluations and tests are used in the diagnosis of Alzheimer's disease?"
+      ],
+      "score": 0.676757380385848,
+      "top_chunk_id": 21,
+      "top_section": "8.4. Clinical diagnosis",
+      "best_query": "What clinical methods and diagnostic criteria are used to diagnose Alzheimer's disease?"
+    },
+    {
+      "question": "What biomarkers are used for Alzheimer's disease diagnosis?",
+      "rewritten_query": "What biomarkers are used to diagnose Alzheimer's disease?",
+      "queries": [
+        "What biomarkers are used to diagnose Alzheimer's disease?",
+        "Which biological markers are used in the diagnosis of Alzheimer's disease?",
+        "What diagnostic biomarkers are used to identify Alzheimer's disease?"
+      ],
+      "score": 0.684590793585876,
+      "top_chunk_id": 19,
+      "top_section": "8.2. Biomarker-based diagnosis",
+      "best_query": "Which biological markers are used in the diagnosis of Alzheimer's disease?"
+    },
+    {
+      "question": "What is the role of amyloid PET imaging in Alzheimer's disease?",
+      "rewritten_query": "What is the role of amyloid PET imaging in Alzheimer's disease?",
+      "queries": [
+        "What is the role of amyloid PET imaging in Alzheimer's disease?",
+        "What is the clinical utility of amyloid positron emission tomography in Alzheimer’s disease?",
+        "How is amyloid PET used in the evaluation of Alzheimer’s disease?"
+      ],
+      "score": 0.691239519378726,
+      "top_chunk_id": 27,
+      "top_section": "9.4.1. Amyloid PET (Core 1 biomarker)",
+      "best_query": "What is the role of amyloid PET imaging in Alzheimer's disease?"
+    },
+    {
+      "question": "What is the role of tau PET imaging in Alzheimer's disease?",
+      "rewritten_query": "What is the role of tau PET imaging in Alzheimer's disease?",
+      "queries": [
+        "What is the role of tau PET imaging in Alzheimer's disease?",
+        "What is the clinical and research utility of tau positron emission tomography in Alzheimer's disease?",
+        "How is tau PET imaging used in the evaluation of Alzheimer's disease?"
+      ],
+      "score": 0.70453706359254,
+      "top_chunk_id": 28,
+      "top_section": "9.4.2. Tau PET (Core 2 biomarker and staging tool)",
+      "best_query": "What is the role of tau PET imaging in Alzheimer's disease?"
+    },
+    {
+      "question": "What MRI findings are associated with Alzheimer's disease?",
+      "rewritten_query": "What MRI findings are associated with Alzheimer's disease?",
+      "queries": [
+        "What MRI findings are associated with Alzheimer's disease?",
+        "What magnetic resonance imaging features are observed in Alzheimer's disease?",
+        "Which MRI abnormalities are linked to Alzheimer's disease?"
+      ],
+      "score": 0.628493187687313,
+      "top_chunk_id": 23,
+      "top_section": "9.1. Structural imaging (CT and MRI)",
+      "best_query": "What magnetic resonance imaging features are observed in Alzheimer's disease?"
+    },
+    {
+      "question": "What blood-based biomarkers are used for Alzheimer's disease?",
+      "rewritten_query": "What blood-based biomarkers are used for Alzheimer's disease?",
+      "queries": [
+        "What blood-based biomarkers are used for Alzheimer's disease?",
+        "Which circulating blood biomarkers are used for Alzheimer’s disease?",
+        "What plasma or serum biomarkers are used in Alzheimer’s disease?"
+      ],
+      "score": 0.682944632149073,
+      "top_chunk_id": 19,
+      "top_section": "8.2. Biomarker-based diagnosis",
+      "best_query": "What blood-based biomarkers are used for Alzheimer's disease?"
+    },
+    {
+      "question": "What is the importance of plasma p-tau217 in Alzheimer's disease diagnosis?",
+      "rewritten_query": "What is the importance of plasma phosphorylated tau 217 (p-tau217) in diagnosing Alzheimer's disease?",
+      "queries": [
+        "What is the importance of plasma phosphorylated tau 217 (p-tau217) in diagnosing Alzheimer's disease?",
+        "What is the diagnostic significance of plasma phosphorylated tau at threonine 217 in Alzheimer's disease?",
+        "What role does blood-based p-tau217 play in the diagnosis of Alzheimer's disease?"
+      ],
+      "score": 0.625044893164707,
+      "top_chunk_id": 17,
+      "top_section": "8. Advances in diagnosis and biomarkers",
+      "best_query": "What role does blood-based p-tau217 play in the diagnosis of Alzheimer's disease?"
+    },
+    {
+      "question": "How do cholinesterase inhibitors treat Alzheimer's disease?",
+      "rewritten_query": "How do cholinesterase inhibitors treat Alzheimer's disease?",
+      "queries": [
+        "How do cholinesterase inhibitors treat Alzheimer's disease?",
+        "What is the mechanism of action of cholinesterase inhibitors in treating Alzheimer's disease?",
+        "How does cholinesterase inhibition provide therapeutic benefit in Alzheimer's disease?"
+      ],
+      "score": 0.567175517658904,
+      "top_chunk_id": 15,
+      "top_section": "7.5. Cholinergic neurotransmission",
+      "best_query": "How does cholinesterase inhibition provide therapeutic benefit in Alzheimer's disease?"
+    },
+    {
+      "question": "What is the role of memantine in Alzheimer's disease treatment?",
+      "rewritten_query": "What is the role of memantine in the treatment of Alzheimer's disease?",
+      "queries": [
+        "What is the role of memantine in the treatment of Alzheimer's disease?",
+        "How is memantine used in the management of Alzheimer's disease?",
+        "What is the therapeutic role of memantine for Alzheimer's disease?"
+      ],
+      "score": 0.564292127471349,
+      "top_chunk_id": 32,
+      "top_section": "11.1. Established symptomatic therapies",
+      "best_query": "What is the therapeutic role of memantine for Alzheimer's disease?"
+    },
+    {
+      "question": "How does lecanemab work in Alzheimer's disease?",
+      "rewritten_query": "How does lecanemab work in Alzheimer's disease?",
+      "queries": [
+        "How does lecanemab work in Alzheimer's disease?",
+        "What is the mechanism of action of lecanemab in Alzheimer's disease?",
+        "Through what biological mechanism does lecanemab act in Alzheimer disease?"
+      ],
+      "score": 0.598497553016575,
+      "top_chunk_id": 35,
+      "top_section": "11.4. Disease-modifying therapies and monoclonal antibodies",
+      "best_query": "Through what biological mechanism does lecanemab act in Alzheimer disease?"
+    },
+    {
+      "question": "How does donanemab work in Alzheimer's disease?",
+      "rewritten_query": "How does donanemab work in Alzheimer's disease?",
+      "queries": [
+        "How does donanemab work in Alzheimer's disease?",
+        "What is the mechanism of action of donanemab in Alzheimer’s disease?",
+        "How does donanemab exert its therapeutic effects in Alzheimer’s disease?"
+      ],
+      "score": 0.603675726219604,
+      "top_chunk_id": 35,
+      "top_section": "11.4. Disease-modifying therapies and monoclonal antibodies",
+      "best_query": "How does donanemab exert its therapeutic effects in Alzheimer’s disease?"
+    },
+    {
+      "question": "What lifestyle interventions may reduce Alzheimer's disease risk?",
+      "rewritten_query": "What lifestyle interventions may reduce the risk of Alzheimer's disease?",
+      "queries": [
+        "What lifestyle interventions may reduce the risk of Alzheimer's disease?",
+        "Which lifestyle modifications may lower the risk of developing Alzheimer's disease?",
+        "What behavioral interventions are associated with reduced Alzheimer's disease risk?"
+      ],
+      "score": 0.671520905692616,
+      "top_chunk_id": 33,
+      "top_section": "11.2. Cognitive and non-pharmacological interventions",
+      "best_query": "What lifestyle interventions may reduce the risk of Alzheimer's disease?"
+    },
+    {
+      "question": "What are the main challenges and future directions in Alzheimer's disease treatment?",
+      "rewritten_query": "What are the main challenges and future directions in Alzheimer's disease treatment?",
+      "queries": [
+        "What are the main challenges and future directions in Alzheimer's disease treatment?",
+        "What are the key therapeutic challenges and emerging directions in Alzheimer’s disease management?",
+        "What are the major limitations of current Alzheimer’s disease treatments and priorities for future therapeutic development?"
+      ],
+      "score": 0.693737069406966,
+      "top_chunk_id": 45,
+      "top_section": "13. Challenges, heterogeneity, and future directions",
+      "best_query": "What are the main challenges and future directions in Alzheimer's disease treatment?"
+    }
+  ],
+  "out_of_scope_results": [
+    {
+      "question": "What is agentic AI?",
+      "rewritten_query": "What is agentic AI?",
+      "queries": [
+        "What is agentic AI?",
+        "What does the term agentic artificial intelligence mean?",
+        "How is agentic AI defined?"
+      ],
+      "score": 0.197072900051414,
+      "top_chunk_id": 17,
+      "top_section": "8. Advances in diagnosis and biomarkers",
+      "best_query": "How is agentic AI defined?"
+    },
+    {
+      "question": "How does a transformer language model work?",
+      "rewritten_query": "How does a transformer language model work?",
+      "queries": [
+        "How does a transformer language model work?",
+        "What is the operating mechanism of a transformer-based language model?",
+        "How do transformer architectures process and generate language?"
+      ],
+      "score": 0.181555291788333,
+      "top_chunk_id": 22,
+      "top_section": "9.1. Structural imaging (CT and MRI)",
+      "best_query": "How do transformer architectures process and generate language?"
+    },
+    {
+      "question": "What is quantum computing?",
+      "rewritten_query": "What is quantum computing?",
+      "queries": [
+        "What is quantum computing?",
+        "What does quantum computing mean?",
+        "How is quantum computing defined?"
+      ],
+      "score": 0.173100374855775,
+      "top_chunk_id": 25,
+      "top_section": "9.3. Quantitative susceptibility mapping (QSM) and iron-related pathophysiology",
+      "best_query": "What is quantum computing?"
+    },
+    {
+      "question": "How does blockchain technology work?",
+      "rewritten_query": "How does blockchain technology work?",
+      "queries": [
+        "How does blockchain technology work?",
+        "What are the fundamental principles and processes underlying blockchain technology?",
+        "How does a blockchain operate as a distributed ledger system?"
+      ],
+      "score": 0.180987809908405,
+      "top_chunk_id": 13,
+      "top_section": "7.3. Amyloid versus tau hypotheses",
+      "best_query": "What are the fundamental principles and processes underlying blockchain technology?"
+    },
+    {
+      "question": "What is the capital of France?",
+      "rewritten_query": "What is the capital of France?",
+      "queries": [
+        "What is the capital of France?",
+        "Which city is the capital of France?",
+        "What city serves as France's capital?"
+      ],
+      "score": 0.0666763300307347,
+      "top_chunk_id": 26,
+      "top_section": "9.4. Nuclear medicine (SPECT and PET)",
+      "best_query": "What city serves as France's capital?"
+    },
+    {
+      "question": "How do solar panels generate electricity?",
+      "rewritten_query": "How do solar panels generate electricity?",
+      "queries": [
+        "How do solar panels generate electricity?",
+        "How do photovoltaic panels convert sunlight into electrical energy?",
+        "What is the process by which solar cells produce electricity?"
+      ],
+      "score": 0.12191444994354,
+      "top_chunk_id": 10,
+      "top_section": "7.1. Senile plaques",
+      "best_query": "What is the process by which solar cells produce electricity?"
+    },
+    {
+      "question": "What causes earthquakes?",
+      "rewritten_query": "What causes earthquakes?",
+      "queries": [
+        "What causes earthquakes?",
+        "What mechanisms cause earthquakes to occur?",
+        "What geological processes trigger earthquakes?"
+      ],
+      "score": 0.14824337749898,
+      "top_chunk_id": 13,
+      "top_section": "7.3. Amyloid versus tau hypotheses",
+      "best_query": "What mechanisms cause earthquakes to occur?"
+    },
+    {
+      "question": "How does photosynthesis work?",
+      "rewritten_query": "How does photosynthesis work?",
+      "queries": [
+        "How does photosynthesis work?",
+        "What is the biological process of photosynthesis?",
+        "How do photosynthetic organisms convert light energy into chemical energy?"
+      ],
+      "score": 0.198550010767673,
+      "top_chunk_id": 9,
+      "top_section": "7. Detailed pathophysiology",
+      "best_query": "What is the biological process of photosynthesis?"
+    },
+    {
+      "question": "What is the history of the Roman Empire?",
+      "rewritten_query": "What is the history of the Roman Empire?",
+      "queries": [
+        "What is the history of the Roman Empire?",
+        "What is the historical development of the Roman Empire?",
+        "What is the chronology and history of the Roman Empire?"
+      ],
+      "score": 0.149428162431891,
+      "top_chunk_id": 18,
+      "top_section": "8.1. Temporal evolution of biomarkers across the Alzheimer's continuum",
+      "best_query": "What is the chronology and history of the Roman Empire?"
+    },
+    {
+      "question": "How do I learn Python programming?",
+      "rewritten_query": "How can I learn Python programming?",
+      "queries": [
+        "How can I learn Python programming?",
+        "What are effective ways to learn Python programming?",
+        "How can I get started learning to program in Python?"
+      ],
+      "score": 0.111403440572864,
+      "top_chunk_id": 33,
+      "top_section": "11.2. Cognitive and non-pharmacological interventions",
+      "best_query": "What are effective ways to learn Python programming?"
+    },
+    {
+      "question": "What causes Parkinson's disease?",
+      "rewritten_query": "What causes Parkinson's disease?",
+      "queries": [
+        "What causes Parkinson's disease?",
+        "What is the etiology of Parkinson's disease?",
+        "What factors cause the development of Parkinson's disease?"
+      ],
+      "score": 0.445078419520288,
+      "top_chunk_id": 4,
+      "top_section": "3. Epidemiology, incidence, and risk factors",
+      "best_query": "What factors cause the development of Parkinson's disease?"
+    },
+    {
+      "question": "How is Parkinson's disease diagnosed?",
+      "rewritten_query": "How is Parkinson's disease diagnosed?",
+      "queries": [
+        "How is Parkinson's disease diagnosed?",
+        "What diagnostic criteria and clinical evaluations are used to diagnose Parkinson's disease?",
+        "How do clinicians establish a diagnosis of Parkinson's disease?"
+      ],
+      "score": 0.520799987069411,
+      "top_chunk_id": 21,
+      "top_section": "8.4. Clinical diagnosis",
+      "best_query": "How do clinicians establish a diagnosis of Parkinson's disease?"
+    },
+    {
+      "question": "What treatments are used for Parkinson's disease?",
+      "rewritten_query": "What treatments are used for Parkinson's disease?",
+      "queries": [
+        "What treatments are used for Parkinson's disease?",
+        "What therapies are used to manage Parkinson's disease?",
+        "What are the treatment options for Parkinson's disease?"
+      ],
+      "score": 0.430747853795726,
+      "top_chunk_id": 32,
+      "top_section": "11.1. Established symptomatic therapies",
+      "best_query": "What are the treatment options for Parkinson's disease?"
+    },
+    {
+      "question": "What are the symptoms of multiple sclerosis?",
+      "rewritten_query": "What are the symptoms of multiple sclerosis?",
+      "queries": [
+        "What are the symptoms of multiple sclerosis?",
+        "What are the clinical signs and symptoms of multiple sclerosis?",
+        "What are the common clinical manifestations of multiple sclerosis?"
+      ],
+      "score": 0.357102499688675,
+      "top_chunk_id": 5,
+      "top_section": "4.1. Typical presentation",
+      "best_query": "What are the common clinical manifestations of multiple sclerosis?"
+    },
+    {
+      "question": "How is type 2 diabetes treated?",
+      "rewritten_query": "How is type 2 diabetes treated?",
+      "queries": [
+        "How is type 2 diabetes treated?",
+        "What are the treatments for type 2 diabetes mellitus?",
+        "How is type 2 diabetes mellitus managed?"
+      ],
+      "score": 0.366857998506178,
+      "top_chunk_id": 31,
+      "top_section": "11. Treatment and prognosis",
+      "best_query": "What are the treatments for type 2 diabetes mellitus?"
+    },
+    {
+      "question": "What causes lung cancer?",
+      "rewritten_query": "What causes lung cancer?",
+      "queries": [
+        "What causes lung cancer?",
+        "What are the causes of lung cancer?",
+        "What factors contribute to the development of lung cancer?"
+      ],
+      "score": 0.312564239041762,
+      "top_chunk_id": 4,
+      "top_section": "3. Epidemiology, incidence, and risk factors",
+      "best_query": "What factors contribute to the development of lung cancer?"
+    },
+    {
+      "question": "What are the treatments for breast cancer?",
+      "rewritten_query": "What are the treatments for breast cancer?",
+      "queries": [
+        "What are the treatments for breast cancer?",
+        "What treatment options are available for breast cancer?",
+        "How is breast cancer treated?"
+      ],
+      "score": 0.313693195781816,
+      "top_chunk_id": 31,
+      "top_section": "11. Treatment and prognosis",
+      "best_query": "What treatment options are available for breast cancer?"
+    },
+    {
+      "question": "How is hypertension diagnosed?",
+      "rewritten_query": "How is hypertension diagnosed?",
+      "queries": [
+        "How is hypertension diagnosed?",
+        "What criteria are used to diagnose hypertension?",
+        "How is high blood pressure clinically diagnosed?"
+      ],
+      "score": 0.324422141099162,
+      "top_chunk_id": 21,
+      "top_section": "8.4. Clinical diagnosis",
+      "best_query": "How is high blood pressure clinically diagnosed?"
+    },
+    {
+      "question": "ما هو الذكاء الاصطناعي؟",
+      "rewritten_query": "What is artificial intelligence?",
+      "queries": [
+        "What is artificial intelligence?",
+        "What is the definition of artificial intelligence?",
+        "How is artificial intelligence defined?"
+      ],
+      "score": 0.190858278856613,
+      "top_chunk_id": 17,
+      "top_section": "8. Advances in diagnosis and biomarkers",
+      "best_query": "How is artificial intelligence defined?"
+    },
+    {
+      "question": "ما هي أعراض مرض باركنسون؟",
+      "rewritten_query": "What are the symptoms of Parkinson's disease?",
+      "queries": [
+        "What are the symptoms of Parkinson's disease?",
+        "What are the clinical manifestations of Parkinson's disease?",
+        "What signs and symptoms are associated with Parkinson's disease?"
+      ],
+      "score": 0.357800146784151,
+      "top_chunk_id": 5,
+      "top_section": "4.1. Typical presentation",
+      "best_query": "What are the clinical manifestations of Parkinson's disease?"
+    }
+  ]
+}

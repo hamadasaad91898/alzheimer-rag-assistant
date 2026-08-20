@@ -1,0 +1,9 @@
+{
+  "source": "neurosci.pdf",
+  "document_hash": "d776eda8358dea0e7c4d59082070b1a09da09065939405ef0cb59fb7d6a32b16",
+  "chunk_count": 46,
+  "embedding_model": "text-embedding-3-large",
+  "embedding_version": "1",
+  "embedding_dimension": 3072,
+  "embedding_provider": "azure_openai"
+}

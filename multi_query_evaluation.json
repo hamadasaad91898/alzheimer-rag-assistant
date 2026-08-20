@@ -1,0 +1,1398 @@
+{
+  "settings": {
+    "final_k": 5,
+    "top_per_query": 10,
+    "multi_query_count": 3,
+    "embedding_model": "text-embedding-3-large",
+    "query_generator_model": "gpt-5.6-sol",
+    "fusion_method": "max_real_cosine_similarity"
+  },
+  "retrieval_metrics": {
+    "original": {
+      "hit_rate_at_5": 1.0,
+      "precision_at_5": 0.45,
+      "recall_at_5": 0.9291666666666666,
+      "mrr": 0.975,
+      "ndcg_at_5": 0.9184566756656837
+    },
+    "single_rewrite": {
+      "hit_rate_at_5": 1.0,
+      "precision_at_5": 0.45,
+      "recall_at_5": 0.9291666666666666,
+      "mrr": 0.975,
+      "ndcg_at_5": 0.9184566756656837
+    },
+    "multi_query": {
+      "hit_rate_at_5": 1.0,
+      "precision_at_5": 0.45999999999999996,
+      "recall_at_5": 0.9416666666666667,
+      "mrr": 1.0,
+      "ndcg_at_5": 0.9464698343071454
+    }
+  },
+  "similarity_summary": {
+    "average_original_top_similarity": 0.624552711712171,
+    "average_single_rewrite_top_similarity": 0.623791488596066,
+    "average_multi_query_top_similarity": 0.6446087419449184,
+    "average_original_relevant_similarity": 0.6245110088390595,
+    "average_single_rewrite_relevant_similarity": 0.6234643502961037,
+    "average_multi_query_relevant_similarity": 0.6446087419449184,
+    "top_score_improved_questions": 15,
+    "relevant_score_improved_questions": 15,
+    "total_questions": 20,
+    "average_top_score_gain": 0.020817253348852316,
+    "average_relevant_score_gain": 0.021144391648814653
+  },
+  "questions": [
+    {
+      "question": "What are the main risk factors for Alzheimer's disease?",
+      "relevant_chunk_ids": [
+        4
+      ],
+      "rewritten_query": "What are the main risk factors for Alzheimer's disease?",
+      "multi_queries": [
+        "What are the main risk factors for Alzheimer's disease?",
+        "What are the principal risk factors associated with Alzheimer's disease?",
+        "Which factors increase the risk of developing Alzheimer's disease?"
+      ],
+      "original": {
+        "top5_ids": [
+          4,
+          16,
+          2,
+          1,
+          9
+        ],
+        "top_similarity": 0.616007368946226,
+        "best_relevant_similarity": 0.616007368946226,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.2,
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0
+        }
+      },
+      "single_rewrite": {
+        "top5_ids": [
+          4,
+          16,
+          2,
+          1,
+          9
+        ],
+        "top_similarity": 0.616007368946226,
+        "best_relevant_similarity": 0.616007368946226,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.2,
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0
+        }
+      },
+      "multi_query": {
+        "top5_ids": [
+          4,
+          16,
+          9,
+          2,
+          1
+        ],
+        "top_similarity": 0.655421224265835,
+        "best_relevant_similarity": 0.655421224265835,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.2,
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0
+        }
+      }
+    },
+    {
+      "question": "What are the typical clinical symptoms of Alzheimer's disease?",
+      "relevant_chunk_ids": [
+        5
+      ],
+      "rewritten_query": "What are the typical clinical symptoms of Alzheimer's disease?",
+      "multi_queries": [
+        "What are the typical clinical symptoms of Alzheimer's disease?",
+        "What are the characteristic clinical manifestations of Alzheimer's disease?",
+        "Which symptoms are commonly observed in patients with Alzheimer's disease?"
+      ],
+      "original": {
+        "top5_ids": [
+          5,
+          2,
+          6,
+          21,
+          8
+        ],
+        "top_similarity": 0.658907309513937,
+        "best_relevant_similarity": 0.658907309513937,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.2,
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0
+        }
+      },
+      "single_rewrite": {
+        "top5_ids": [
+          5,
+          2,
+          6,
+          21,
+          8
+        ],
+        "top_similarity": 0.658907309513937,
+        "best_relevant_similarity": 0.658907309513937,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.2,
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0
+        }
+      },
+      "multi_query": {
+        "top5_ids": [
+          5,
+          2,
+          6,
+          21,
+          8
+        ],
+        "top_similarity": 0.658907309513937,
+        "best_relevant_similarity": 0.658907309513937,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.2,
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0
+        }
+      }
+    },
+    {
+      "question": "What role does amyloid-beta play in Alzheimer's disease?",
+      "relevant_chunk_ids": [
+        10,
+        11,
+        13
+      ],
+      "rewritten_query": "What role does amyloid-beta play in Alzheimer's disease?",
+      "multi_queries": [
+        "What role does amyloid-beta play in Alzheimer's disease?",
+        "How does amyloid-beta contribute to Alzheimer's disease?",
+        "What is the role of amyloid-beta in the pathogenesis of Alzheimer's disease?"
+      ],
+      "original": {
+        "top5_ids": [
+          10,
+          13,
+          11,
+          9,
+          14
+        ],
+        "top_similarity": 0.59912908957541,
+        "best_relevant_similarity": 0.59912908957541,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.6,
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0
+        }
+      },
+      "single_rewrite": {
+        "top5_ids": [
+          10,
+          13,
+          11,
+          9,
+          14
+        ],
+        "top_similarity": 0.59912908957541,
+        "best_relevant_similarity": 0.59912908957541,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.6,
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0
+        }
+      },
+      "multi_query": {
+        "top5_ids": [
+          13,
+          10,
+          9,
+          11,
+          14
+        ],
+        "top_similarity": 0.615622769773002,
+        "best_relevant_similarity": 0.615622769773002,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.6,
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.9674679834891693
+        }
+      }
+    },
+    {
+      "question": "What role does tau protein play in Alzheimer's disease?",
+      "relevant_chunk_ids": [
+        12,
+        13
+      ],
+      "rewritten_query": "What role does tau protein play in Alzheimer's disease?",
+      "multi_queries": [
+        "What role does tau protein play in Alzheimer's disease?",
+        "How does tau protein contribute to Alzheimer's disease pathology?",
+        "What is the involvement of tau protein in the development and progression of Alzheimer's disease?"
+      ],
+      "original": {
+        "top5_ids": [
+          13,
+          12,
+          28,
+          36,
+          9
+        ],
+        "top_similarity": 0.582661668919946,
+        "best_relevant_similarity": 0.582661668919946,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.4,
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0
+        }
+      },
+      "single_rewrite": {
+        "top5_ids": [
+          13,
+          12,
+          28,
+          36,
+          9
+        ],
+        "top_similarity": 0.582661668919946,
+        "best_relevant_similarity": 0.582661668919946,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.4,
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0
+        }
+      },
+      "multi_query": {
+        "top5_ids": [
+          13,
+          12,
+          28,
+          14,
+          9
+        ],
+        "top_similarity": 0.613892597311249,
+        "best_relevant_similarity": 0.613892597311249,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.4,
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0
+        }
+      }
+    },
+    {
+      "question": "How does neuroinflammation contribute to Alzheimer's disease?",
+      "relevant_chunk_ids": [
+        14
+      ],
+      "rewritten_query": "How does neuroinflammation contribute to Alzheimer's disease?",
+      "multi_queries": [
+        "How does neuroinflammation contribute to Alzheimer's disease?",
+        "What role does neuroinflammation play in the pathogenesis of Alzheimer's disease?",
+        "How do neuroinflammatory processes contribute to Alzheimer's disease development and progression?"
+      ],
+      "original": {
+        "top5_ids": [
+          14,
+          38,
+          9,
+          13,
+          2
+        ],
+        "top_similarity": 0.63104836918491,
+        "best_relevant_similarity": 0.63104836918491,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.2,
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0
+        }
+      },
+      "single_rewrite": {
+        "top5_ids": [
+          14,
+          38,
+          9,
+          13,
+          2
+        ],
+        "top_similarity": 0.63104836918491,
+        "best_relevant_similarity": 0.63104836918491,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.2,
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0
+        }
+      },
+      "multi_query": {
+        "top5_ids": [
+          14,
+          38,
+          9,
+          13,
+          2
+        ],
+        "top_similarity": 0.648430713515646,
+        "best_relevant_similarity": 0.648430713515646,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.2,
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0
+        }
+      }
+    },
+    {
+      "question": "What genetic factors are associated with Alzheimer's disease?",
+      "relevant_chunk_ids": [
+        4,
+        16
+      ],
+      "rewritten_query": "What genetic factors are associated with Alzheimer's disease?",
+      "multi_queries": [
+        "What genetic factors are associated with Alzheimer's disease?",
+        "Which genetic variants and genes are linked to Alzheimer's disease?",
+        "What genetic determinants are associated with Alzheimer's disease risk?"
+      ],
+      "original": {
+        "top5_ids": [
+          16,
+          4,
+          13,
+          9,
+          10
+        ],
+        "top_similarity": 0.635290137802858,
+        "best_relevant_similarity": 0.635290137802858,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.4,
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0
+        }
+      },
+      "single_rewrite": {
+        "top5_ids": [
+          16,
+          4,
+          13,
+          9,
+          10
+        ],
+        "top_similarity": 0.635290137802858,
+        "best_relevant_similarity": 0.635290137802858,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.4,
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0
+        }
+      },
+      "multi_query": {
+        "top5_ids": [
+          16,
+          4,
+          13,
+          9,
+          10
+        ],
+        "top_similarity": 0.65601176729735,
+        "best_relevant_similarity": 0.65601176729735,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.4,
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0
+        }
+      }
+    },
+    {
+      "question": "How does the APOE epsilon 4 allele affect Alzheimer's disease risk?",
+      "relevant_chunk_ids": [
+        4,
+        16
+      ],
+      "rewritten_query": "How does the APOE epsilon 4 allele affect the risk of Alzheimer's disease?",
+      "multi_queries": [
+        "How does the APOE epsilon 4 allele affect the risk of Alzheimer's disease?",
+        "What is the impact of the APOE epsilon 4 allele on Alzheimer's disease susceptibility?",
+        "How is APOE epsilon 4 carrier status associated with the likelihood of developing Alzheimer's disease?"
+      ],
+      "original": {
+        "top5_ids": [
+          16,
+          4,
+          13,
+          9,
+          1
+        ],
+        "top_similarity": 0.574483919514085,
+        "best_relevant_similarity": 0.574483919514085,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.4,
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0
+        }
+      },
+      "single_rewrite": {
+        "top5_ids": [
+          16,
+          4,
+          13,
+          9,
+          10
+        ],
+        "top_similarity": 0.570160721143666,
+        "best_relevant_similarity": 0.570160721143666,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.4,
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0
+        }
+      },
+      "multi_query": {
+        "top5_ids": [
+          16,
+          4,
+          13,
+          11,
+          10
+        ],
+        "top_similarity": 0.594986404839343,
+        "best_relevant_similarity": 0.594986404839343,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.4,
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0
+        }
+      }
+    },
+    {
+      "question": "How is Alzheimer's disease diagnosed?",
+      "relevant_chunk_ids": [
+        17,
+        19,
+        21,
+        30
+      ],
+      "rewritten_query": "How is Alzheimer's disease diagnosed?",
+      "multi_queries": [
+        "How is Alzheimer's disease diagnosed?",
+        "What methods and criteria are used to diagnose Alzheimer's disease?",
+        "How do clinicians establish a diagnosis of Alzheimer's disease?"
+      ],
+      "original": {
+        "top5_ids": [
+          21,
+          3,
+          2,
+          30,
+          19
+        ],
+        "top_similarity": 0.619495530337022,
+        "best_relevant_similarity": 0.619495530337022,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.6,
+          "recall": 0.75,
+          "mrr": 1.0,
+          "ndcg": 0.7095272044910244
+        }
+      },
+      "single_rewrite": {
+        "top5_ids": [
+          21,
+          3,
+          2,
+          30,
+          19
+        ],
+        "top_similarity": 0.619495530337022,
+        "best_relevant_similarity": 0.619495530337022,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.6,
+          "recall": 0.75,
+          "mrr": 1.0,
+          "ndcg": 0.7095272044910244
+        }
+      },
+      "multi_query": {
+        "top5_ids": [
+          21,
+          30,
+          19,
+          3,
+          17
+        ],
+        "top_similarity": 0.681734512914535,
+        "best_relevant_similarity": 0.681734512914535,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.8,
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.9828920819566879
+        }
+      }
+    },
+    {
+      "question": "What biomarkers are used for Alzheimer's disease diagnosis?",
+      "relevant_chunk_ids": [
+        17,
+        19,
+        27,
+        28
+      ],
+      "rewritten_query": "What biomarkers are used to diagnose Alzheimer's disease?",
+      "multi_queries": [
+        "What biomarkers are used to diagnose Alzheimer's disease?",
+        "Which biomarkers are utilized in the diagnosis of Alzheimer's disease?",
+        "What biological markers support diagnostic evaluation for Alzheimer's disease?"
+      ],
+      "original": {
+        "top5_ids": [
+          19,
+          17,
+          21,
+          27,
+          30
+        ],
+        "top_similarity": 0.687248113577516,
+        "best_relevant_similarity": 0.687248113577516,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.6,
+          "recall": 0.75,
+          "mrr": 1.0,
+          "ndcg": 0.8048099750039491
+        }
+      },
+      "single_rewrite": {
+        "top5_ids": [
+          19,
+          17,
+          21,
+          27,
+          30
+        ],
+        "top_similarity": 0.680455035173505,
+        "best_relevant_similarity": 0.680455035173505,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.6,
+          "recall": 0.75,
+          "mrr": 1.0,
+          "ndcg": 0.8048099750039491
+        }
+      },
+      "multi_query": {
+        "top5_ids": [
+          19,
+          17,
+          30,
+          21,
+          27
+        ],
+        "top_similarity": 0.701076061875568,
+        "best_relevant_similarity": 0.701076061875568,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.6,
+          "recall": 0.75,
+          "mrr": 1.0,
+          "ndcg": 0.787702056960637
+        }
+      }
+    },
+    {
+      "question": "What is the role of amyloid PET imaging in Alzheimer's disease?",
+      "relevant_chunk_ids": [
+        17,
+        19,
+        27
+      ],
+      "rewritten_query": "What is the role of amyloid PET imaging in Alzheimer's disease?",
+      "multi_queries": [
+        "What is the role of amyloid PET imaging in Alzheimer's disease?",
+        "How is amyloid PET imaging used in Alzheimer's disease?",
+        "What is the clinical utility of amyloid PET imaging for Alzheimer's disease?"
+      ],
+      "original": {
+        "top5_ids": [
+          27,
+          19,
+          28,
+          29,
+          26
+        ],
+        "top_similarity": 0.691239519378726,
+        "best_relevant_similarity": 0.691239519378726,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.4,
+          "recall": 0.6666666666666666,
+          "mrr": 1.0,
+          "ndcg": 0.7653606369886217
+        }
+      },
+      "single_rewrite": {
+        "top5_ids": [
+          27,
+          19,
+          28,
+          29,
+          26
+        ],
+        "top_similarity": 0.691239519378726,
+        "best_relevant_similarity": 0.691239519378726,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.4,
+          "recall": 0.6666666666666666,
+          "mrr": 1.0,
+          "ndcg": 0.7653606369886217
+        }
+      },
+      "multi_query": {
+        "top5_ids": [
+          27,
+          19,
+          28,
+          29,
+          26
+        ],
+        "top_similarity": 0.691177150244209,
+        "best_relevant_similarity": 0.691177150244209,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.4,
+          "recall": 0.6666666666666666,
+          "mrr": 1.0,
+          "ndcg": 0.7653606369886217
+        }
+      }
+    },
+    {
+      "question": "What is the role of tau PET imaging in Alzheimer's disease?",
+      "relevant_chunk_ids": [
+        17,
+        19,
+        28
+      ],
+      "rewritten_query": "What is the role of tau PET imaging in Alzheimer's disease?",
+      "multi_queries": [
+        "What is the role of tau PET imaging in Alzheimer's disease?",
+        "What is the clinical utility of tau PET imaging in Alzheimer's disease?",
+        "How is tau PET imaging used in the evaluation of Alzheimer's disease?"
+      ],
+      "original": {
+        "top5_ids": [
+          28,
+          19,
+          29,
+          27,
+          26
+        ],
+        "top_similarity": 0.704546448731644,
+        "best_relevant_similarity": 0.704546448731644,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.4,
+          "recall": 0.6666666666666666,
+          "mrr": 1.0,
+          "ndcg": 0.7653606369886217
+        }
+      },
+      "single_rewrite": {
+        "top5_ids": [
+          28,
+          19,
+          29,
+          27,
+          26
+        ],
+        "top_similarity": 0.70453706359254,
+        "best_relevant_similarity": 0.70453706359254,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.4,
+          "recall": 0.6666666666666666,
+          "mrr": 1.0,
+          "ndcg": 0.7653606369886217
+        }
+      },
+      "multi_query": {
+        "top5_ids": [
+          28,
+          19,
+          29,
+          27,
+          36
+        ],
+        "top_similarity": 0.70453706359254,
+        "best_relevant_similarity": 0.70453706359254,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.4,
+          "recall": 0.6666666666666666,
+          "mrr": 1.0,
+          "ndcg": 0.7653606369886217
+        }
+      }
+    },
+    {
+      "question": "What MRI findings are associated with Alzheimer's disease?",
+      "relevant_chunk_ids": [
+        22,
+        23,
+        24,
+        25
+      ],
+      "rewritten_query": "What MRI findings are associated with Alzheimer's disease?",
+      "multi_queries": [
+        "What MRI findings are associated with Alzheimer's disease?",
+        "Which MRI abnormalities are associated with Alzheimer's disease?",
+        "What neuroimaging features of Alzheimer's disease are observed on MRI?"
+      ],
+      "original": {
+        "top5_ids": [
+          23,
+          22,
+          24,
+          29,
+          27
+        ],
+        "top_similarity": 0.626460182677572,
+        "best_relevant_similarity": 0.626460182677572,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.6,
+          "recall": 0.75,
+          "mrr": 1.0,
+          "ndcg": 0.8318724637288826
+        }
+      },
+      "single_rewrite": {
+        "top5_ids": [
+          23,
+          22,
+          24,
+          29,
+          27
+        ],
+        "top_similarity": 0.626460182677572,
+        "best_relevant_similarity": 0.626460182677572,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.6,
+          "recall": 0.75,
+          "mrr": 1.0,
+          "ndcg": 0.8318724637288826
+        }
+      },
+      "multi_query": {
+        "top5_ids": [
+          23,
+          22,
+          24,
+          18,
+          29
+        ],
+        "top_similarity": 0.641005167335049,
+        "best_relevant_similarity": 0.641005167335049,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.6,
+          "recall": 0.75,
+          "mrr": 1.0,
+          "ndcg": 0.8318724637288826
+        }
+      }
+    },
+    {
+      "question": "What blood-based biomarkers are used for Alzheimer's disease?",
+      "relevant_chunk_ids": [
+        17,
+        19
+      ],
+      "rewritten_query": "What blood-based biomarkers are used for Alzheimer's disease?",
+      "multi_queries": [
+        "What blood-based biomarkers are used for Alzheimer's disease?",
+        "Which plasma biomarkers are used in Alzheimer's disease?",
+        "What circulating blood biomarkers are used for Alzheimer's disease?"
+      ],
+      "original": {
+        "top5_ids": [
+          19,
+          17,
+          27,
+          18,
+          21
+        ],
+        "top_similarity": 0.682944632149073,
+        "best_relevant_similarity": 0.682944632149073,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.4,
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0
+        }
+      },
+      "single_rewrite": {
+        "top5_ids": [
+          19,
+          17,
+          27,
+          18,
+          21
+        ],
+        "top_similarity": 0.682944632149073,
+        "best_relevant_similarity": 0.682944632149073,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.4,
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0
+        }
+      },
+      "multi_query": {
+        "top5_ids": [
+          19,
+          17,
+          27,
+          18,
+          21
+        ],
+        "top_similarity": 0.682944632149073,
+        "best_relevant_similarity": 0.682944632149073,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.4,
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0
+        }
+      }
+    },
+    {
+      "question": "What is the importance of plasma p-tau217 in Alzheimer's disease diagnosis?",
+      "relevant_chunk_ids": [
+        17
+      ],
+      "rewritten_query": "What is the importance of plasma phosphorylated tau 217 (p-tau217) in diagnosing Alzheimer's disease?",
+      "multi_queries": [
+        "What is the importance of plasma phosphorylated tau 217 (p-tau217) in diagnosing Alzheimer's disease?",
+        "What is the diagnostic significance of plasma phosphorylated tau 217 (p-tau217) in Alzheimer's disease?",
+        "How important is plasma p-tau217 as a biomarker for the diagnosis of Alzheimer's disease?"
+      ],
+      "original": {
+        "top5_ids": [
+          19,
+          17,
+          28,
+          27,
+          21
+        ],
+        "top_similarity": 0.599328689173562,
+        "best_relevant_similarity": 0.598494631711332,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.2,
+          "recall": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714575
+        }
+      },
+      "single_rewrite": {
+        "top5_ids": [
+          19,
+          17,
+          28,
+          27,
+          13
+        ],
+        "top_similarity": 0.597460443910832,
+        "best_relevant_similarity": 0.590917677911584,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.2,
+          "recall": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714575
+        }
+      },
+      "multi_query": {
+        "top5_ids": [
+          17,
+          19,
+          28,
+          27,
+          20
+        ],
+        "top_similarity": 0.630266925465557,
+        "best_relevant_similarity": 0.630266925465557,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.2,
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0
+        }
+      }
+    },
+    {
+      "question": "How do cholinesterase inhibitors treat Alzheimer's disease?",
+      "relevant_chunk_ids": [
+        15,
+        32
+      ],
+      "rewritten_query": "How do cholinesterase inhibitors treat Alzheimer's disease?",
+      "multi_queries": [
+        "How do cholinesterase inhibitors treat Alzheimer's disease?",
+        "What is the therapeutic mechanism of cholinesterase inhibitors in Alzheimer's disease?",
+        "How do acetylcholinesterase inhibitors work as a treatment for Alzheimer's disease?"
+      ],
+      "original": {
+        "top5_ids": [
+          32,
+          15,
+          39,
+          40,
+          31
+        ],
+        "top_similarity": 0.52020531975601,
+        "best_relevant_similarity": 0.52020531975601,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.4,
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0
+        }
+      },
+      "single_rewrite": {
+        "top5_ids": [
+          32,
+          15,
+          39,
+          40,
+          31
+        ],
+        "top_similarity": 0.520204516693406,
+        "best_relevant_similarity": 0.520204516693406,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.4,
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0
+        }
+      },
+      "multi_query": {
+        "top5_ids": [
+          32,
+          15,
+          40,
+          39,
+          41
+        ],
+        "top_similarity": 0.570729273254686,
+        "best_relevant_similarity": 0.570729273254686,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.4,
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0
+        }
+      }
+    },
+    {
+      "question": "What is the role of memantine in Alzheimer's disease treatment?",
+      "relevant_chunk_ids": [
+        32,
+        39,
+        41
+      ],
+      "rewritten_query": "What is the role of memantine in the treatment of Alzheimer's disease?",
+      "multi_queries": [
+        "What is the role of memantine in the treatment of Alzheimer's disease?",
+        "How is memantine used in the management of Alzheimer's disease?",
+        "What therapeutic role does memantine have in Alzheimer's disease?"
+      ],
+      "original": {
+        "top5_ids": [
+          32,
+          39,
+          41,
+          40,
+          31
+        ],
+        "top_similarity": 0.54101326885187,
+        "best_relevant_similarity": 0.54101326885187,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.6,
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0
+        }
+      },
+      "single_rewrite": {
+        "top5_ids": [
+          32,
+          39,
+          41,
+          40,
+          31
+        ],
+        "top_similarity": 0.538632269356806,
+        "best_relevant_similarity": 0.538632269356806,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.6,
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0
+        }
+      },
+      "multi_query": {
+        "top5_ids": [
+          32,
+          39,
+          41,
+          40,
+          31
+        ],
+        "top_similarity": 0.569829557301947,
+        "best_relevant_similarity": 0.569829557301947,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.6,
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0
+        }
+      }
+    },
+    {
+      "question": "How does lecanemab work in Alzheimer's disease?",
+      "relevant_chunk_ids": [
+        35,
+        40,
+        41
+      ],
+      "rewritten_query": "How does lecanemab work in Alzheimer's disease?",
+      "multi_queries": [
+        "How does lecanemab work in Alzheimer's disease?",
+        "What is the mechanism of action of lecanemab in Alzheimer's disease?",
+        "By what mechanism does lecanemab exert its effects in Alzheimer's disease?"
+      ],
+      "original": {
+        "top5_ids": [
+          35,
+          40,
+          36,
+          43,
+          41
+        ],
+        "top_similarity": 0.576591910546577,
+        "best_relevant_similarity": 0.576591910546577,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.6,
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.9469024295259745
+        }
+      },
+      "single_rewrite": {
+        "top5_ids": [
+          35,
+          40,
+          36,
+          43,
+          41
+        ],
+        "top_similarity": 0.576585374008317,
+        "best_relevant_similarity": 0.576585374008317,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.6,
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.9469024295259745
+        }
+      },
+      "multi_query": {
+        "top5_ids": [
+          35,
+          40,
+          36,
+          43,
+          41
+        ],
+        "top_similarity": 0.601244522038677,
+        "best_relevant_similarity": 0.601244522038677,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.6,
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.9469024295259745
+        }
+      }
+    },
+    {
+      "question": "How does donanemab work in Alzheimer's disease?",
+      "relevant_chunk_ids": [
+        35,
+        40,
+        41
+      ],
+      "rewritten_query": "How does donanemab work in Alzheimer's disease?",
+      "multi_queries": [
+        "How does donanemab work in Alzheimer's disease?",
+        "What is the mechanism of action of donanemab in Alzheimer's disease?",
+        "By what mechanism does donanemab act in Alzheimer's disease?"
+      ],
+      "original": {
+        "top5_ids": [
+          35,
+          40,
+          36,
+          43,
+          41
+        ],
+        "top_similarity": 0.579407435734512,
+        "best_relevant_similarity": 0.579407435734512,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.6,
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.9469024295259745
+        }
+      },
+      "single_rewrite": {
+        "top5_ids": [
+          35,
+          40,
+          36,
+          43,
+          41
+        ],
+        "top_similarity": 0.579407435734512,
+        "best_relevant_similarity": 0.579407435734512,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.6,
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.9469024295259745
+        }
+      },
+      "multi_query": {
+        "top5_ids": [
+          35,
+          40,
+          36,
+          43,
+          41
+        ],
+        "top_similarity": 0.604519758361173,
+        "best_relevant_similarity": 0.604519758361173,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.6,
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.9469024295259745
+        }
+      }
+    },
+    {
+      "question": "What lifestyle interventions may reduce Alzheimer's disease risk?",
+      "relevant_chunk_ids": [
+        4,
+        33,
+        45
+      ],
+      "rewritten_query": "What lifestyle interventions may reduce the risk of Alzheimer's disease?",
+      "multi_queries": [
+        "What lifestyle interventions may reduce the risk of Alzheimer's disease?",
+        "Which lifestyle modifications may lower the risk of developing Alzheimer's disease?",
+        "What lifestyle-based interventions are associated with reduced Alzheimer's disease risk?"
+      ],
+      "original": {
+        "top5_ids": [
+          33,
+          4,
+          46,
+          45,
+          31
+        ],
+        "top_similarity": 0.671363121742522,
+        "best_relevant_similarity": 0.671363121742522,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.6,
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.9674679834891693
+        }
+      },
+      "single_rewrite": {
+        "top5_ids": [
+          33,
+          4,
+          46,
+          45,
+          31
+        ],
+        "top_similarity": 0.671520905692616,
+        "best_relevant_similarity": 0.671520905692616,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.6,
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.9674679834891693
+        }
+      },
+      "multi_query": {
+        "top5_ids": [
+          33,
+          4,
+          46,
+          45,
+          31
+        ],
+        "top_similarity": 0.676155229719549,
+        "best_relevant_similarity": 0.676155229719549,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.6,
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.9674679834891693
+        }
+      }
+    },
+    {
+      "question": "What are the main challenges and future directions in Alzheimer's disease treatment?",
+      "relevant_chunk_ids": [
+        40,
+        45,
+        46
+      ],
+      "rewritten_query": "What are the main challenges and future directions in Alzheimer's disease treatment?",
+      "multi_queries": [
+        "What are the main challenges and future directions in Alzheimer's disease treatment?",
+        "What are the key obstacles and emerging directions in the treatment of Alzheimer's disease?",
+        "What are the principal treatment challenges and future therapeutic strategies for Alzheimer's disease?"
+      ],
+      "original": {
+        "top5_ids": [
+          45,
+          46,
+          40,
+          31,
+          32
+        ],
+        "top_similarity": 0.693682198129441,
+        "best_relevant_similarity": 0.693682198129441,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.6,
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0
+        }
+      },
+      "single_rewrite": {
+        "top5_ids": [
+          45,
+          46,
+          40,
+          31,
+          32
+        ],
+        "top_similarity": 0.693682198129441,
+        "best_relevant_similarity": 0.693682198129441,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.6,
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0
+        }
+      },
+      "multi_query": {
+        "top5_ids": [
+          45,
+          46,
+          31,
+          40,
+          32
+        ],
+        "top_similarity": 0.693682198129441,
+        "best_relevant_similarity": 0.693682198129441,
+        "metrics": {
+          "hit_rate": 1.0,
+          "precision": 0.6,
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.9674679834891693
+        }
+      }
+    }
+  ]
+}

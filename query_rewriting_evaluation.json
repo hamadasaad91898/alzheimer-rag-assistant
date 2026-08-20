@@ -1,0 +1,1071 @@
+{
+  "settings": {
+    "vector_k": 5,
+    "candidate_k": 10,
+    "final_k": 5,
+    "rerank_max_attempts": 2,
+    "rerank_max_output_tokens": 1200,
+    "embedding_model": "text-embedding-3-large",
+    "reranker_model": "gpt-5.6-sol",
+    "reranker_output_format": "comma_separated_chunk_ids"
+  },
+  "original_vector": {
+    "hit_rate_at_5": 1.0,
+    "precision_at_5": 0.45,
+    "recall_at_5": 0.9291666666666666,
+    "mrr": 0.975,
+    "ndcg_at_5": 0.9184566756656837
+  },
+  "query_rewrite_vector": {
+    "hit_rate_at_5": 1.0,
+    "precision_at_5": 0.45,
+    "recall_at_5": 0.9291666666666666,
+    "mrr": 1.0,
+    "ndcg_at_5": 0.9369101879871108
+  },
+  "query_rewrite_vector_reranker": {
+    "hit_rate_at_5": 1.0,
+    "precision_at_5": 0.48,
+    "recall_at_5": 0.975,
+    "mrr": 1.0,
+    "ndcg_at_5": 0.977820161394051
+  },
+  "reranker_reliability": {
+    "total_questions": 20,
+    "final_failures": 0,
+    "fallbacks": 0,
+    "success_rate": 1.0
+  },
+  "questions": [
+    {
+      "question": "What are the main risk factors for Alzheimer's disease?",
+      "rewritten_query": "What are the main risk factors for Alzheimer's disease?",
+      "relevant_chunk_ids": [
+        4
+      ],
+      "original_vector_ids": [
+        4,
+        16,
+        2,
+        1,
+        9
+      ],
+      "rewrite_vector_ids": [
+        4,
+        16,
+        2,
+        1,
+        9
+      ],
+      "rewrite_reranker_ids": [
+        4,
+        16,
+        45,
+        46,
+        1
+      ],
+      "reranker_fallback_used": false,
+      "original_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "rewrite_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "rewrite_reranker_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "question": "What are the typical clinical symptoms of Alzheimer's disease?",
+      "rewritten_query": "What are the typical clinical symptoms of Alzheimer's disease?",
+      "relevant_chunk_ids": [
+        5
+      ],
+      "original_vector_ids": [
+        5,
+        2,
+        6,
+        21,
+        8
+      ],
+      "rewrite_vector_ids": [
+        5,
+        2,
+        6,
+        21,
+        8
+      ],
+      "rewrite_reranker_ids": [
+        5,
+        2,
+        8,
+        6,
+        21
+      ],
+      "reranker_fallback_used": false,
+      "original_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "rewrite_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "rewrite_reranker_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "question": "What role does amyloid-beta play in Alzheimer's disease?",
+      "rewritten_query": "What role does amyloid-beta play in Alzheimer's disease?",
+      "relevant_chunk_ids": [
+        10,
+        11,
+        13
+      ],
+      "original_vector_ids": [
+        10,
+        13,
+        11,
+        9,
+        14
+      ],
+      "rewrite_vector_ids": [
+        10,
+        13,
+        11,
+        9,
+        14
+      ],
+      "rewrite_reranker_ids": [
+        13,
+        10,
+        11,
+        14,
+        9
+      ],
+      "reranker_fallback_used": false,
+      "original_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.6,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "rewrite_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.6,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "rewrite_reranker_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.6,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "question": "What role does tau protein play in Alzheimer's disease?",
+      "rewritten_query": "What role does tau protein play in Alzheimer's disease?",
+      "relevant_chunk_ids": [
+        12,
+        13
+      ],
+      "original_vector_ids": [
+        13,
+        12,
+        28,
+        36,
+        9
+      ],
+      "rewrite_vector_ids": [
+        13,
+        12,
+        28,
+        36,
+        9
+      ],
+      "rewrite_reranker_ids": [
+        12,
+        13,
+        8,
+        14,
+        9
+      ],
+      "reranker_fallback_used": false,
+      "original_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.4,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "rewrite_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.4,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "rewrite_reranker_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.4,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "question": "How does neuroinflammation contribute to Alzheimer's disease?",
+      "rewritten_query": "How does neuroinflammation contribute to Alzheimer's disease?",
+      "relevant_chunk_ids": [
+        14
+      ],
+      "original_vector_ids": [
+        14,
+        38,
+        9,
+        13,
+        2
+      ],
+      "rewrite_vector_ids": [
+        14,
+        38,
+        9,
+        13,
+        2
+      ],
+      "rewrite_reranker_ids": [
+        14,
+        38,
+        4,
+        9,
+        1
+      ],
+      "reranker_fallback_used": false,
+      "original_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "rewrite_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "rewrite_reranker_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "question": "What genetic factors are associated with Alzheimer's disease?",
+      "rewritten_query": "What genetic factors are associated with Alzheimer's disease?",
+      "relevant_chunk_ids": [
+        4,
+        16
+      ],
+      "original_vector_ids": [
+        16,
+        4,
+        13,
+        9,
+        10
+      ],
+      "rewrite_vector_ids": [
+        16,
+        4,
+        13,
+        9,
+        10
+      ],
+      "rewrite_reranker_ids": [
+        16,
+        4,
+        10,
+        13,
+        45
+      ],
+      "reranker_fallback_used": false,
+      "original_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.4,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "rewrite_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.4,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "rewrite_reranker_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.4,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "question": "How does the APOE epsilon 4 allele affect Alzheimer's disease risk?",
+      "rewritten_query": "How does the APOE epsilon 4 allele affect Alzheimer's disease risk?",
+      "relevant_chunk_ids": [
+        4,
+        16
+      ],
+      "original_vector_ids": [
+        16,
+        4,
+        13,
+        9,
+        1
+      ],
+      "rewrite_vector_ids": [
+        16,
+        4,
+        13,
+        9,
+        1
+      ],
+      "rewrite_reranker_ids": [
+        4,
+        16,
+        13,
+        9,
+        10
+      ],
+      "reranker_fallback_used": false,
+      "original_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.4,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "rewrite_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.4,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "rewrite_reranker_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.4,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "question": "How is Alzheimer's disease diagnosed?",
+      "rewritten_query": "How is Alzheimer's disease diagnosed?",
+      "relevant_chunk_ids": [
+        17,
+        19,
+        21,
+        30
+      ],
+      "original_vector_ids": [
+        21,
+        3,
+        2,
+        30,
+        19
+      ],
+      "rewrite_vector_ids": [
+        21,
+        3,
+        2,
+        30,
+        19
+      ],
+      "rewrite_reranker_ids": [
+        21,
+        17,
+        19,
+        30,
+        3
+      ],
+      "reranker_fallback_used": false,
+      "original_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.6,
+        "recall": 0.75,
+        "mrr": 1.0,
+        "ndcg": 0.7095272044910244
+      },
+      "rewrite_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.6,
+        "recall": 0.75,
+        "mrr": 1.0,
+        "ndcg": 0.7095272044910244
+      },
+      "rewrite_reranker_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.8,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "question": "What biomarkers are used for Alzheimer's disease diagnosis?",
+      "rewritten_query": "What biomarkers are used to diagnose Alzheimer's disease?",
+      "relevant_chunk_ids": [
+        17,
+        19,
+        27,
+        28
+      ],
+      "original_vector_ids": [
+        19,
+        17,
+        21,
+        27,
+        30
+      ],
+      "rewrite_vector_ids": [
+        19,
+        17,
+        21,
+        27,
+        30
+      ],
+      "rewrite_reranker_ids": [
+        17,
+        19,
+        18,
+        27,
+        20
+      ],
+      "reranker_fallback_used": false,
+      "original_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.6,
+        "recall": 0.75,
+        "mrr": 1.0,
+        "ndcg": 0.8048099750039491
+      },
+      "rewrite_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.6,
+        "recall": 0.75,
+        "mrr": 1.0,
+        "ndcg": 0.8048099750039491
+      },
+      "rewrite_reranker_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.6,
+        "recall": 0.75,
+        "mrr": 1.0,
+        "ndcg": 0.8048099750039491
+      }
+    },
+    {
+      "question": "What is the role of amyloid PET imaging in Alzheimer's disease?",
+      "rewritten_query": "What is the role of amyloid PET imaging in Alzheimer's disease?",
+      "relevant_chunk_ids": [
+        17,
+        19,
+        27
+      ],
+      "original_vector_ids": [
+        27,
+        19,
+        28,
+        29,
+        26
+      ],
+      "rewrite_vector_ids": [
+        27,
+        19,
+        28,
+        29,
+        26
+      ],
+      "rewrite_reranker_ids": [
+        27,
+        17,
+        19,
+        3,
+        18
+      ],
+      "reranker_fallback_used": false,
+      "original_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.4,
+        "recall": 0.6666666666666666,
+        "mrr": 1.0,
+        "ndcg": 0.7653606369886217
+      },
+      "rewrite_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.4,
+        "recall": 0.6666666666666666,
+        "mrr": 1.0,
+        "ndcg": 0.7653606369886217
+      },
+      "rewrite_reranker_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.6,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "question": "What is the role of tau PET imaging in Alzheimer's disease?",
+      "rewritten_query": "What is the role of tau PET imaging in Alzheimer's disease?",
+      "relevant_chunk_ids": [
+        17,
+        19,
+        28
+      ],
+      "original_vector_ids": [
+        28,
+        19,
+        29,
+        27,
+        26
+      ],
+      "rewrite_vector_ids": [
+        28,
+        19,
+        29,
+        27,
+        26
+      ],
+      "rewrite_reranker_ids": [
+        28,
+        17,
+        19,
+        18,
+        29
+      ],
+      "reranker_fallback_used": false,
+      "original_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.4,
+        "recall": 0.6666666666666666,
+        "mrr": 1.0,
+        "ndcg": 0.7653606369886217
+      },
+      "rewrite_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.4,
+        "recall": 0.6666666666666666,
+        "mrr": 1.0,
+        "ndcg": 0.7653606369886217
+      },
+      "rewrite_reranker_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.6,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "question": "What MRI findings are associated with Alzheimer's disease?",
+      "rewritten_query": "What MRI findings are associated with Alzheimer's disease?",
+      "relevant_chunk_ids": [
+        22,
+        23,
+        24,
+        25
+      ],
+      "original_vector_ids": [
+        23,
+        22,
+        24,
+        29,
+        27
+      ],
+      "rewrite_vector_ids": [
+        23,
+        22,
+        24,
+        29,
+        27
+      ],
+      "rewrite_reranker_ids": [
+        22,
+        23,
+        24,
+        18,
+        8
+      ],
+      "reranker_fallback_used": false,
+      "original_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.6,
+        "recall": 0.75,
+        "mrr": 1.0,
+        "ndcg": 0.8318724637288826
+      },
+      "rewrite_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.6,
+        "recall": 0.75,
+        "mrr": 1.0,
+        "ndcg": 0.8318724637288826
+      },
+      "rewrite_reranker_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.6,
+        "recall": 0.75,
+        "mrr": 1.0,
+        "ndcg": 0.8318724637288826
+      }
+    },
+    {
+      "question": "What blood-based biomarkers are used for Alzheimer's disease?",
+      "rewritten_query": "What blood-based biomarkers are used for Alzheimer's disease?",
+      "relevant_chunk_ids": [
+        17,
+        19
+      ],
+      "original_vector_ids": [
+        19,
+        17,
+        27,
+        18,
+        21
+      ],
+      "rewrite_vector_ids": [
+        19,
+        17,
+        27,
+        18,
+        21
+      ],
+      "rewrite_reranker_ids": [
+        17,
+        20,
+        19,
+        21,
+        46
+      ],
+      "reranker_fallback_used": false,
+      "original_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.4,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "rewrite_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.4,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "rewrite_reranker_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.4,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 0.9197207891481876
+      }
+    },
+    {
+      "question": "What is the importance of plasma p-tau217 in Alzheimer's disease diagnosis?",
+      "rewritten_query": "What is the importance of plasma p-tau217 in the diagnosis of Alzheimer's disease?",
+      "relevant_chunk_ids": [
+        17
+      ],
+      "original_vector_ids": [
+        19,
+        17,
+        28,
+        27,
+        21
+      ],
+      "rewrite_vector_ids": [
+        17,
+        19,
+        28,
+        27,
+        21
+      ],
+      "rewrite_reranker_ids": [
+        17,
+        20,
+        19,
+        21,
+        30
+      ],
+      "reranker_fallback_used": false,
+      "original_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      },
+      "rewrite_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "rewrite_reranker_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "question": "How do cholinesterase inhibitors treat Alzheimer's disease?",
+      "rewritten_query": "How do cholinesterase inhibitors treat Alzheimer's disease?",
+      "relevant_chunk_ids": [
+        15,
+        32
+      ],
+      "original_vector_ids": [
+        32,
+        15,
+        39,
+        40,
+        31
+      ],
+      "rewrite_vector_ids": [
+        32,
+        15,
+        39,
+        40,
+        31
+      ],
+      "rewrite_reranker_ids": [
+        32,
+        15,
+        40,
+        39,
+        41
+      ],
+      "reranker_fallback_used": false,
+      "original_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.4,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "rewrite_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.4,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "rewrite_reranker_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.4,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "question": "What is the role of memantine in Alzheimer's disease treatment?",
+      "rewritten_query": "What is the role of memantine in the treatment of Alzheimer's disease?",
+      "relevant_chunk_ids": [
+        32,
+        39,
+        41
+      ],
+      "original_vector_ids": [
+        32,
+        39,
+        41,
+        40,
+        31
+      ],
+      "rewrite_vector_ids": [
+        32,
+        39,
+        41,
+        40,
+        31
+      ],
+      "rewrite_reranker_ids": [
+        32,
+        39,
+        41,
+        40,
+        31
+      ],
+      "reranker_fallback_used": false,
+      "original_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.6,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "rewrite_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.6,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "rewrite_reranker_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.6,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "question": "How does lecanemab work in Alzheimer's disease?",
+      "rewritten_query": "How does lecanemab work in Alzheimer's disease?",
+      "relevant_chunk_ids": [
+        35,
+        40,
+        41
+      ],
+      "original_vector_ids": [
+        35,
+        40,
+        36,
+        43,
+        41
+      ],
+      "rewrite_vector_ids": [
+        35,
+        40,
+        36,
+        43,
+        41
+      ],
+      "rewrite_reranker_ids": [
+        35,
+        40,
+        41,
+        13,
+        46
+      ],
+      "reranker_fallback_used": false,
+      "original_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.6,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 0.9469024295259745
+      },
+      "rewrite_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.6,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 0.9469024295259745
+      },
+      "rewrite_reranker_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.6,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "question": "How does donanemab work in Alzheimer's disease?",
+      "rewritten_query": "How does donanemab work in Alzheimer's disease?",
+      "relevant_chunk_ids": [
+        35,
+        40,
+        41
+      ],
+      "original_vector_ids": [
+        35,
+        40,
+        36,
+        43,
+        41
+      ],
+      "rewrite_vector_ids": [
+        35,
+        40,
+        36,
+        43,
+        41
+      ],
+      "rewrite_reranker_ids": [
+        35,
+        40,
+        41,
+        46,
+        31
+      ],
+      "reranker_fallback_used": false,
+      "original_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.6,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 0.9469024295259745
+      },
+      "rewrite_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.6,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 0.9469024295259745
+      },
+      "rewrite_reranker_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.6,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "question": "What lifestyle interventions may reduce Alzheimer's disease risk?",
+      "rewritten_query": "What lifestyle interventions may reduce the risk of Alzheimer's disease?",
+      "relevant_chunk_ids": [
+        4,
+        33,
+        45
+      ],
+      "original_vector_ids": [
+        33,
+        4,
+        46,
+        45,
+        31
+      ],
+      "rewrite_vector_ids": [
+        33,
+        4,
+        46,
+        45,
+        31
+      ],
+      "rewrite_reranker_ids": [
+        33,
+        45,
+        4,
+        31,
+        46
+      ],
+      "reranker_fallback_used": false,
+      "original_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.6,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 0.9674679834891693
+      },
+      "rewrite_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.6,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 0.9674679834891693
+      },
+      "rewrite_reranker_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.6,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "question": "What are the main challenges and future directions in Alzheimer's disease treatment?",
+      "rewritten_query": "What are the main challenges and future directions in Alzheimer's disease treatment?",
+      "relevant_chunk_ids": [
+        40,
+        45,
+        46
+      ],
+      "original_vector_ids": [
+        45,
+        46,
+        40,
+        31,
+        32
+      ],
+      "rewrite_vector_ids": [
+        45,
+        46,
+        40,
+        31,
+        32
+      ],
+      "rewrite_reranker_ids": [
+        45,
+        46,
+        40,
+        36,
+        35
+      ],
+      "reranker_fallback_used": false,
+      "original_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.6,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "rewrite_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.6,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "rewrite_reranker_metrics": {
+        "hit_rate": 1.0,
+        "precision": 0.6,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    }
+  ]
+}

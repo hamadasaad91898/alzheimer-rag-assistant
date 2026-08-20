@@ -1,0 +1,972 @@
+{
+  "questions": 20,
+  "vector_candidate_k": 10,
+  "final_k": 5,
+  "reranker": "gpt-5.6-sol",
+  "metrics": {
+    "hit_rate_at_5": 1.0,
+    "mean_precision_at_5": 0.47000000000000003,
+    "mean_recall_at_5": 0.9625,
+    "mrr": 1.0,
+    "mean_ndcg_at_5": 0.9718011442975442
+  },
+  "results": [
+    {
+      "question": "What are the main risk factors for Alzheimer's disease?",
+      "expected_chunks": [
+        4
+      ],
+      "vector_top_10": [
+        4,
+        16,
+        2,
+        1,
+        9,
+        46,
+        45,
+        13,
+        10,
+        3
+      ],
+      "llm_ranked_top_10": [
+        4,
+        45,
+        16,
+        9,
+        46,
+        1,
+        2,
+        13,
+        10,
+        3
+      ],
+      "final_top_5": [
+        4,
+        45,
+        16,
+        9,
+        46
+      ],
+      "found_relevant_chunks": [
+        4
+      ],
+      "hit_at_5": 1,
+      "precision_at_5": 0.2,
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_5": 1.0
+    },
+    {
+      "question": "What are the typical clinical symptoms of Alzheimer's disease?",
+      "expected_chunks": [
+        5
+      ],
+      "vector_top_10": [
+        5,
+        2,
+        6,
+        21,
+        8,
+        9,
+        3,
+        4,
+        44,
+        18
+      ],
+      "llm_ranked_top_10": [
+        5,
+        2,
+        8,
+        21,
+        18,
+        6,
+        44,
+        9,
+        3,
+        4
+      ],
+      "final_top_5": [
+        5,
+        2,
+        8,
+        21,
+        18
+      ],
+      "found_relevant_chunks": [
+        5
+      ],
+      "hit_at_5": 1,
+      "precision_at_5": 0.2,
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_5": 1.0
+    },
+    {
+      "question": "What role does amyloid-beta play in Alzheimer's disease?",
+      "expected_chunks": [
+        10,
+        11,
+        13
+      ],
+      "vector_top_10": [
+        10,
+        13,
+        11,
+        9,
+        14,
+        27,
+        4,
+        16,
+        1,
+        46
+      ],
+      "llm_ranked_top_10": [
+        13,
+        11,
+        10,
+        14,
+        9,
+        16,
+        4,
+        27,
+        1,
+        46
+      ],
+      "final_top_5": [
+        13,
+        11,
+        10,
+        14,
+        9
+      ],
+      "found_relevant_chunks": [
+        13,
+        11,
+        10
+      ],
+      "hit_at_5": 1,
+      "precision_at_5": 0.6,
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_5": 1.0
+    },
+    {
+      "question": "What role does tau protein play in Alzheimer's disease?",
+      "expected_chunks": [
+        12,
+        13
+      ],
+      "vector_top_10": [
+        13,
+        12,
+        28,
+        36,
+        9,
+        8,
+        14,
+        19,
+        10,
+        11
+      ],
+      "llm_ranked_top_10": [
+        12,
+        13,
+        9,
+        8,
+        14,
+        28,
+        36,
+        19,
+        11,
+        10
+      ],
+      "final_top_5": [
+        12,
+        13,
+        9,
+        8,
+        14
+      ],
+      "found_relevant_chunks": [
+        12,
+        13
+      ],
+      "hit_at_5": 1,
+      "precision_at_5": 0.4,
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_5": 1.0
+    },
+    {
+      "question": "How does neuroinflammation contribute to Alzheimer's disease?",
+      "expected_chunks": [
+        14
+      ],
+      "vector_top_10": [
+        14,
+        38,
+        9,
+        13,
+        2,
+        11,
+        10,
+        1,
+        46,
+        4
+      ],
+      "llm_ranked_top_10": [
+        14,
+        4,
+        38,
+        9,
+        1,
+        46,
+        13,
+        11,
+        10,
+        2
+      ],
+      "final_top_5": [
+        14,
+        4,
+        38,
+        9,
+        1
+      ],
+      "found_relevant_chunks": [
+        14
+      ],
+      "hit_at_5": 1,
+      "precision_at_5": 0.2,
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_5": 1.0
+    },
+    {
+      "question": "What genetic factors are associated with Alzheimer's disease?",
+      "expected_chunks": [
+        4,
+        16
+      ],
+      "vector_top_10": [
+        16,
+        4,
+        13,
+        9,
+        10,
+        1,
+        2,
+        3,
+        45,
+        11
+      ],
+      "llm_ranked_top_10": [
+        16,
+        4,
+        10,
+        13,
+        45,
+        1,
+        9,
+        11,
+        2,
+        3
+      ],
+      "final_top_5": [
+        16,
+        4,
+        10,
+        13,
+        45
+      ],
+      "found_relevant_chunks": [
+        16,
+        4
+      ],
+      "hit_at_5": 1,
+      "precision_at_5": 0.4,
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_5": 1.0
+    },
+    {
+      "question": "How does the APOE epsilon 4 allele affect Alzheimer's disease risk?",
+      "expected_chunks": [
+        4,
+        16
+      ],
+      "vector_top_10": [
+        16,
+        4,
+        13,
+        9,
+        1,
+        10,
+        11,
+        2,
+        46,
+        5
+      ],
+      "llm_ranked_top_10": [
+        4,
+        16,
+        13,
+        10,
+        9,
+        11,
+        1,
+        46,
+        2,
+        5
+      ],
+      "final_top_5": [
+        4,
+        16,
+        13,
+        10,
+        9
+      ],
+      "found_relevant_chunks": [
+        4,
+        16
+      ],
+      "hit_at_5": 1,
+      "precision_at_5": 0.4,
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_5": 1.0
+    },
+    {
+      "question": "How is Alzheimer's disease diagnosed?",
+      "expected_chunks": [
+        17,
+        19,
+        21,
+        30
+      ],
+      "vector_top_10": [
+        21,
+        3,
+        2,
+        30,
+        19,
+        17,
+        44,
+        8,
+        4,
+        9
+      ],
+      "llm_ranked_top_10": [
+        17,
+        21,
+        19,
+        30,
+        3,
+        8,
+        44,
+        2,
+        9,
+        4
+      ],
+      "final_top_5": [
+        17,
+        21,
+        19,
+        30,
+        3
+      ],
+      "found_relevant_chunks": [
+        17,
+        21,
+        19,
+        30
+      ],
+      "hit_at_5": 1,
+      "precision_at_5": 0.8,
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_5": 1.0
+    },
+    {
+      "question": "What biomarkers are used for Alzheimer's disease diagnosis?",
+      "expected_chunks": [
+        17,
+        19,
+        27,
+        28
+      ],
+      "vector_top_10": [
+        19,
+        17,
+        21,
+        27,
+        30,
+        18,
+        20,
+        3,
+        46,
+        28
+      ],
+      "llm_ranked_top_10": [
+        17,
+        19,
+        18,
+        20,
+        21,
+        3,
+        30,
+        46,
+        27,
+        28
+      ],
+      "final_top_5": [
+        17,
+        19,
+        18,
+        20,
+        21
+      ],
+      "found_relevant_chunks": [
+        17,
+        19
+      ],
+      "hit_at_5": 1,
+      "precision_at_5": 0.4,
+      "recall_at_5": 0.5,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_5": 0.6366824387328317
+    },
+    {
+      "question": "What is the role of amyloid PET imaging in Alzheimer's disease?",
+      "expected_chunks": [
+        17,
+        19,
+        27
+      ],
+      "vector_top_10": [
+        27,
+        19,
+        28,
+        29,
+        26,
+        17,
+        3,
+        18,
+        13,
+        10
+      ],
+      "llm_ranked_top_10": [
+        27,
+        17,
+        19,
+        3,
+        18,
+        29,
+        28,
+        26,
+        10,
+        13
+      ],
+      "final_top_5": [
+        27,
+        17,
+        19,
+        3,
+        18
+      ],
+      "found_relevant_chunks": [
+        27,
+        17,
+        19
+      ],
+      "hit_at_5": 1,
+      "precision_at_5": 0.6,
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_5": 1.0
+    },
+    {
+      "question": "What is the role of tau PET imaging in Alzheimer's disease?",
+      "expected_chunks": [
+        17,
+        19,
+        28
+      ],
+      "vector_top_10": [
+        28,
+        19,
+        29,
+        27,
+        26,
+        13,
+        18,
+        17,
+        36,
+        24
+      ],
+      "llm_ranked_top_10": [
+        28,
+        17,
+        19,
+        18,
+        29,
+        27,
+        26,
+        13,
+        24,
+        36
+      ],
+      "final_top_5": [
+        28,
+        17,
+        19,
+        18,
+        29
+      ],
+      "found_relevant_chunks": [
+        28,
+        17,
+        19
+      ],
+      "hit_at_5": 1,
+      "precision_at_5": 0.6,
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_5": 1.0
+    },
+    {
+      "question": "What MRI findings are associated with Alzheimer's disease?",
+      "expected_chunks": [
+        22,
+        23,
+        24,
+        25
+      ],
+      "vector_top_10": [
+        23,
+        22,
+        24,
+        29,
+        27,
+        18,
+        19,
+        44,
+        9,
+        8
+      ],
+      "llm_ranked_top_10": [
+        22,
+        23,
+        24,
+        18,
+        8,
+        44,
+        19,
+        27,
+        29,
+        9
+      ],
+      "final_top_5": [
+        22,
+        23,
+        24,
+        18,
+        8
+      ],
+      "found_relevant_chunks": [
+        22,
+        23,
+        24
+      ],
+      "hit_at_5": 1,
+      "precision_at_5": 0.6,
+      "recall_at_5": 0.75,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_5": 0.8318724637288826
+    },
+    {
+      "question": "What blood-based biomarkers are used for Alzheimer's disease?",
+      "expected_chunks": [
+        17,
+        19
+      ],
+      "vector_top_10": [
+        19,
+        17,
+        27,
+        18,
+        21,
+        20,
+        30,
+        46,
+        3,
+        28
+      ],
+      "llm_ranked_top_10": [
+        19,
+        17,
+        27,
+        18,
+        21,
+        20,
+        30,
+        46,
+        3,
+        28
+      ],
+      "final_top_5": [
+        19,
+        17,
+        27,
+        18,
+        21
+      ],
+      "found_relevant_chunks": [
+        19,
+        17
+      ],
+      "hit_at_5": 1,
+      "precision_at_5": 0.4,
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_5": 1.0
+    },
+    {
+      "question": "What is the importance of plasma p-tau217 in Alzheimer's disease diagnosis?",
+      "expected_chunks": [
+        17
+      ],
+      "vector_top_10": [
+        19,
+        17,
+        28,
+        27,
+        21,
+        20,
+        13,
+        30,
+        46,
+        18
+      ],
+      "llm_ranked_top_10": [
+        17,
+        19,
+        20,
+        21,
+        18,
+        30,
+        46,
+        27,
+        28,
+        13
+      ],
+      "final_top_5": [
+        17,
+        19,
+        20,
+        21,
+        18
+      ],
+      "found_relevant_chunks": [
+        17
+      ],
+      "hit_at_5": 1,
+      "precision_at_5": 0.2,
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_5": 1.0
+    },
+    {
+      "question": "How do cholinesterase inhibitors treat Alzheimer's disease?",
+      "expected_chunks": [
+        15,
+        32
+      ],
+      "vector_top_10": [
+        32,
+        15,
+        39,
+        40,
+        31,
+        41,
+        1,
+        36,
+        46,
+        9
+      ],
+      "llm_ranked_top_10": [
+        32,
+        15,
+        40,
+        39,
+        41,
+        31,
+        1,
+        46,
+        36,
+        9
+      ],
+      "final_top_5": [
+        32,
+        15,
+        40,
+        39,
+        41
+      ],
+      "found_relevant_chunks": [
+        32,
+        15
+      ],
+      "hit_at_5": 1,
+      "precision_at_5": 0.4,
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_5": 1.0
+    },
+    {
+      "question": "What is the role of memantine in Alzheimer's disease treatment?",
+      "expected_chunks": [
+        32,
+        39,
+        41
+      ],
+      "vector_top_10": [
+        32,
+        39,
+        41,
+        40,
+        31,
+        42,
+        43,
+        35,
+        15,
+        36
+      ],
+      "llm_ranked_top_10": [
+        32,
+        39,
+        40,
+        41,
+        31,
+        15,
+        42,
+        35,
+        43,
+        36
+      ],
+      "final_top_5": [
+        32,
+        39,
+        40,
+        41,
+        31
+      ],
+      "found_relevant_chunks": [
+        32,
+        39,
+        41
+      ],
+      "hit_at_5": 1,
+      "precision_at_5": 0.6,
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_5": 0.9674679834891693
+    },
+    {
+      "question": "How does lecanemab work in Alzheimer's disease?",
+      "expected_chunks": [
+        35,
+        40,
+        41
+      ],
+      "vector_top_10": [
+        35,
+        40,
+        36,
+        43,
+        41,
+        38,
+        46,
+        32,
+        31,
+        13
+      ],
+      "llm_ranked_top_10": [
+        35,
+        40,
+        41,
+        13,
+        46,
+        31,
+        32,
+        36,
+        38,
+        43
+      ],
+      "final_top_5": [
+        35,
+        40,
+        41,
+        13,
+        46
+      ],
+      "found_relevant_chunks": [
+        35,
+        40,
+        41
+      ],
+      "hit_at_5": 1,
+      "precision_at_5": 0.6,
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_5": 1.0
+    },
+    {
+      "question": "How does donanemab work in Alzheimer's disease?",
+      "expected_chunks": [
+        35,
+        40,
+        41
+      ],
+      "vector_top_10": [
+        35,
+        40,
+        36,
+        43,
+        41,
+        46,
+        32,
+        38,
+        42,
+        31
+      ],
+      "llm_ranked_top_10": [
+        35,
+        40,
+        41,
+        46,
+        32,
+        36,
+        38,
+        43,
+        42,
+        31
+      ],
+      "final_top_5": [
+        35,
+        40,
+        41,
+        46,
+        32
+      ],
+      "found_relevant_chunks": [
+        35,
+        40,
+        41
+      ],
+      "hit_at_5": 1,
+      "precision_at_5": 0.6,
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_5": 1.0
+    },
+    {
+      "question": "What lifestyle interventions may reduce Alzheimer's disease risk?",
+      "expected_chunks": [
+        4,
+        33,
+        45
+      ],
+      "vector_top_10": [
+        33,
+        4,
+        46,
+        45,
+        31,
+        38,
+        40,
+        2,
+        1,
+        32
+      ],
+      "llm_ranked_top_10": [
+        33,
+        45,
+        4,
+        31,
+        46,
+        38,
+        40,
+        32,
+        2,
+        1
+      ],
+      "final_top_5": [
+        33,
+        45,
+        4,
+        31,
+        46
+      ],
+      "found_relevant_chunks": [
+        33,
+        45,
+        4
+      ],
+      "hit_at_5": 1,
+      "precision_at_5": 0.6,
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_5": 1.0
+    },
+    {
+      "question": "What are the main challenges and future directions in Alzheimer's disease treatment?",
+      "expected_chunks": [
+        40,
+        45,
+        46
+      ],
+      "vector_top_10": [
+        45,
+        46,
+        40,
+        31,
+        32,
+        1,
+        36,
+        41,
+        35,
+        2
+      ],
+      "llm_ranked_top_10": [
+        45,
+        46,
+        40,
+        36,
+        35,
+        31,
+        2,
+        32,
+        41,
+        1
+      ],
+      "final_top_5": [
+        45,
+        46,
+        40,
+        36,
+        35
+      ],
+      "found_relevant_chunks": [
+        45,
+        46,
+        40
+      ],
+      "hit_at_5": 1,
+      "precision_at_5": 0.6,
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "ndcg_at_5": 1.0
+    }
+  ]
+}

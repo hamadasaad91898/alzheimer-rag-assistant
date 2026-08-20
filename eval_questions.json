@@ -1,0 +1,82 @@
+[
+  {
+    "question": "What are the main risk factors for Alzheimer's disease?",
+    "relevant_chunk_ids": [4]
+  },
+  {
+    "question": "What are the typical clinical symptoms of Alzheimer's disease?",
+    "relevant_chunk_ids": [5]
+  },
+  {
+    "question": "What role does amyloid-beta play in Alzheimer's disease?",
+    "relevant_chunk_ids": [10, 11, 13]
+  },
+  {
+    "question": "What role does tau protein play in Alzheimer's disease?",
+    "relevant_chunk_ids": [12, 13]
+  },
+  {
+    "question": "How does neuroinflammation contribute to Alzheimer's disease?",
+    "relevant_chunk_ids": [14]
+  },
+  {
+    "question": "What genetic factors are associated with Alzheimer's disease?",
+    "relevant_chunk_ids": [4, 16]
+  },
+  {
+    "question": "How does the APOE epsilon 4 allele affect Alzheimer's disease risk?",
+    "relevant_chunk_ids": [4, 16]
+  },
+  {
+    "question": "How is Alzheimer's disease diagnosed?",
+    "relevant_chunk_ids": [17, 19, 21, 30]
+  },
+  {
+    "question": "What biomarkers are used for Alzheimer's disease diagnosis?",
+    "relevant_chunk_ids": [17, 19, 27, 28]
+  },
+  {
+    "question": "What is the role of amyloid PET imaging in Alzheimer's disease?",
+    "relevant_chunk_ids": [17, 19, 27]
+  },
+  {
+    "question": "What is the role of tau PET imaging in Alzheimer's disease?",
+    "relevant_chunk_ids": [17, 19, 28]
+  },
+  {
+    "question": "What MRI findings are associated with Alzheimer's disease?",
+    "relevant_chunk_ids": [22, 23, 24, 25]
+  },
+  {
+    "question": "What blood-based biomarkers are used for Alzheimer's disease?",
+    "relevant_chunk_ids": [17, 19]
+  },
+  {
+    "question": "What is the importance of plasma p-tau217 in Alzheimer's disease diagnosis?",
+    "relevant_chunk_ids": [17]
+  },
+  {
+    "question": "How do cholinesterase inhibitors treat Alzheimer's disease?",
+    "relevant_chunk_ids": [15, 32]
+  },
+  {
+    "question": "What is the role of memantine in Alzheimer's disease treatment?",
+    "relevant_chunk_ids": [32, 39, 41]
+  },
+  {
+    "question": "How does lecanemab work in Alzheimer's disease?",
+    "relevant_chunk_ids": [35, 40, 41]
+  },
+  {
+    "question": "How does donanemab work in Alzheimer's disease?",
+    "relevant_chunk_ids": [35, 40, 41]
+  },
+  {
+    "question": "What lifestyle interventions may reduce Alzheimer's disease risk?",
+    "relevant_chunk_ids": [4, 33, 45]
+  },
+  {
+    "question": "What are the main challenges and future directions in Alzheimer's disease treatment?",
+    "relevant_chunk_ids": [40, 45, 46]
+  }
+]
